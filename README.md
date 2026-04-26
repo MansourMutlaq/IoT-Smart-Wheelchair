@@ -22,7 +22,7 @@ The system follows a modular architecture consisting of three main layers:
 3. **Application Layer:** Async Web Server providing a real-time UI/Dashboard for monitoring and manual control.
 
 <p align="center">
-  <img src="رابط_صورة_المخطط_الهندسي_هنا" width="250" alt="System Architecture Diagram">
+  <img src="https://github.com/user-attachments/assets/9ac3bf8c-598c-481c-9894-eee6ad8815d2" width="250">
 </p>
 
 ---
