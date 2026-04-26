@@ -10,6 +10,9 @@
 ## 📖 Project Overview
 An innovative IoT system designed for autonomous mobility and real-time health monitoring. This project serves as a **Secure Local Edge Node**, processing sensor data and providing a web-based dashboard without external internet dependency, ensuring privacy and high reliability for users.
 
+<img width="600" height="1067" alt="IMG_0127" src="https://github.com/user-attachments/assets/9ac3bf8c-598c-481c-9894-eee6ad8815d2" />
+
+
 ---
 
 ## 🏗️ System Architecture
