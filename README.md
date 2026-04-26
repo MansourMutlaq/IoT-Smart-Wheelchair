@@ -40,15 +40,19 @@ The system follows a modular architecture consisting of three main layers:
 The wheelchair Prototype is built with a custom-engineered structure, integrated components, and sustainable power management.
 
 <div align="center">
-  <table style="width: 100%; text-align: center;">
+  <table style="width: 100%; border-collapse: collapse; border: none;">
     <tr>
-      <td style="padding: 10px; width: 50%;">
-        <b>Final Prototype Overview</b><br><br>
-        <img src="photo_6012850353960848430_y" width="300" alt="Smart Wheelchair Overview">
+      <td style="padding: 15px; border: none; text-align: center;">
+        <h3 style="margin-bottom: 10px;">Final Prototype Overview</h3>
+        <img src="https://github.com/user-attachments/assets/bdc8f377-eac0-47c1-9270-4f7b9e214f02" 
+             style="width: 350px; height: 450px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" 
+             alt="Smart Wheelchair Overview">
       </td>
-      <td style="padding: 10px; width: 50%;">
-        <b>Solar Power Integration (Top View)</b><br><br>
-        <img src="photo_6012850353960848431_y" width="300" alt="Solar Panel Highight">
+      <td style="padding: 15px; border: none; text-align: center;">
+        <h3 style="margin-bottom: 10px;">Solar Power Integration</h3>
+        <img src="https://github.com/user-attachments/assets/d00d56b0-d05d-4367-8fdc-9938f8b990d3" 
+             style="width: 350px; height: 450px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" 
+             alt="Solar Panel Highlight">
       </td>
     </tr>
   </table>
