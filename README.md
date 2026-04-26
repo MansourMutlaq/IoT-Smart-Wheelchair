@@ -61,6 +61,10 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 ---
 
 
+<img width="1138" height="640" alt="copy_A1D2B17C-33CA-4E98-ABD8-80CEA95CF833" src="https://github.com/user-attachments/assets/d4145b2b-53ed-44a7-8ae6-74e90ccf73c5" />
+
+
+
 ## 📱 User Interface (Dashboard Showcase)
 
 <div align="center">
