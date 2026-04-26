@@ -11,6 +11,29 @@ An innovative IoT system designed for autonomous mobility and real-time health m
 
 ---
 
+## 🚀 Key Features
+
+- 🧠 **Smart Navigation:** Real-time obstacle avoidance using Ultrasonic sensors and Servo scanning.
+- 🛡️ **Secure Connectivity:** Standalone WPA2-encrypted Access Point (AP) for off-grid operations.
+- 📊 **Live Telemetry:** Web-based dashboard for heart rate, GPS coordinates, and system status.
+- 🆘 **Emergency SOS:** Instant alarm and GPS location sharing for rapid emergency response.
+- ☀️ **Sustainable Energy:** Solar-powered battery management for extended range.
+
+---
+
+## 🎯 System Architecture
+
+```text
+Sensors (Perception) <-> ESP32 (Control) <-> Async Web Server (Application)
+```
+
+The system follows a modular architecture consisting of three main layers:
+1. **Perception Layer:** Sensors (Ultrasonic, GPS, Pulse) gathering environmental and biological data.
+2. **Control Layer:** ESP32 processing logic, managing the L298N Driver, and executing avoidance algorithms.
+3. **Application Layer:** Async Web Server providing a real-time UI/Dashboard for monitoring and manual control.
+
+---
+
 ## 📱 User Interface (Dashboard Showcase)
 
 <div align="center">
@@ -44,26 +67,18 @@ An innovative IoT system designed for autonomous mobility and real-time health m
 
 ---
 
-## 🚀 Key Features
-
-- 🧠 **Smart Navigation:** Real-time obstacle avoidance using Ultrasonic sensors and Servo scanning.
-- 🛡️ **Secure Connectivity:** Standalone WPA2-encrypted Access Point (AP) for off-grid operations.
-- 📊 **Live Telemetry:** Web-based dashboard for heart rate, GPS coordinates, and system status.
-- 🆘 **Emergency SOS:** Instant alarm and GPS location sharing for rapid emergency response.
-- ☀️ **Sustainable Energy:** Solar-powered battery management for extended range.
+## 🧠 System Logic & Control Flow
+The wheelchair employs a "Sense-Think-Act" cycle to ensure user safety:
+- **Distance > 40cm:** Normal operation (Manual control via Dashboard).
+- **Distance 25cm - 40cm:** Warning state (Buzzer alert + Speed reduction).
+- **Distance < 25cm:** Critical state (**Auto-stop + Smart Avoidance Algorithm activated**).
 
 ---
 
-## 🎯 System Architecture
-
-```text
-Sensors (Perception) <-> ESP32 (Control) <-> Async Web Server (Application)
-```
-
-The system follows a modular architecture consisting of three main layers:
-1. **Perception Layer:** Sensors (Ultrasonic, GPS, Pulse) gathering environmental and biological data.
-2. **Control Layer:** ESP32 processing logic, managing the L298N Driver, and executing avoidance algorithms.
-3. **Application Layer:** Async Web Server providing a real-time UI/Dashboard for monitoring and manual control.
+## 🛠️ Engineering Challenges Overcome
+- **Concurrency:** Managed sensor readings and WebServer requests simultaneously using non-blocking programming (avoiding `delay()`).
+- **System Stability:** Implemented **Hardware Watchdog Timer (WDT)** to ensure the ESP32 recovers automatically from any software hangs.
+- **Power Efficiency:** Optimized WiFi sleep modes to balance between dashboard responsiveness and battery longevity.
 
 ---
 
@@ -97,21 +112,6 @@ Pass: Safe@Wheel2030
 ```text
 Open your browser and navigate to: [http://192.168.4.1](http://192.168.4.1)
 ```
-
----
-
-## 🧠 System Logic & Control Flow
-The wheelchair employs a "Sense-Think-Act" cycle to ensure user safety:
-- **Distance > 40cm:** Normal operation (Manual control via Dashboard).
-- **Distance 25cm - 40cm:** Warning state (Buzzer alert + Speed reduction).
-- **Distance < 25cm:** Critical state (**Auto-stop + Smart Avoidance Algorithm activated**).
-
----
-
-## 🛠️ Engineering Challenges Overcome
-- **Concurrency:** Managed sensor readings and WebServer requests simultaneously using non-blocking programming (avoiding `delay()`).
-- **System Stability:** Implemented **Hardware Watchdog Timer (WDT)** to ensure the ESP32 recovers automatically from any software hangs.
-- **Power Efficiency:** Optimized WiFi sleep modes to balance between dashboard responsiveness and battery longevity.
 
 ---
 
