@@ -61,8 +61,6 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 ---
 
 
-<img width="1138" height="640" alt="copy_A1D2B17C-33CA-4E98-ABD8-80CEA95CF833" src="https://github.com/user-attachments/assets/d4145b2b-53ed-44a7-8ae6-74e90ccf73c5" />
-
 
 
 ## 📱 User Interface (Dashboard Showcase)
@@ -97,6 +95,28 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 </div>
 
 ---
+
+---
+
+## 🛡️ System Reliability & Failsafe Logic
+
+The application features a proactive **Connectivity Monitor**. If the heartbeat between the **Edge Node (ESP32)** and the **Dashboard** is interrupted, the UI instantly switches to a high-alert Failsafe mode to ensure safety.
+
+<div align="center">
+  <table style="border-collapse: collapse; border: none; background-color: #ffffff; padding: 10px; border-radius: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+    <tr>
+      <td style="border: none; text-align: center; padding: 20px;">
+        <img src="https://github.com/user-attachments/assets/d4145b2b-53ed-44a7-8ae6-74e90ccf73c5" width="280" alt="Failsafe Connection Lost Mode" style="border-radius: 12px;">
+        <br><br>
+        <b style="color: #d32f2f;">🔴 Connection Loss Detection</b><br>
+        <i style="font-size: 0.9em; color: #555;">Instant visual feedback and system lockout when the wheelchair is unreachable.</i>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
 
 ## 🧠 System Logic & Control Flow
 The wheelchair employs a "Sense-Think-Act" cycle to ensure user safety:
