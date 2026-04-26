@@ -34,6 +34,29 @@ The system follows a modular architecture consisting of three main layers:
 
 ---
 
+
+## 🏗️ Hardware Prototype & Build
+
+The wheelchair Prototype is built with a custom-engineered structure, integrated components, and sustainable power management.
+
+<div align="center">
+  <table style="width: 100%; text-align: center;">
+    <tr>
+      <td style="padding: 10px; width: 50%;">
+        <b>Final Prototype Overview</b><br><br>
+        <img src="photo_6012850353960848430_y" width="300" alt="Smart Wheelchair Overview">
+      </td>
+      <td style="padding: 10px; width: 50%;">
+        <b>Solar Power Integration (Top View)</b><br><br>
+        <img src="photo_6012850353960848431_y" width="300" alt="Solar Panel Highight">
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+
 ## 📱 User Interface (Dashboard Showcase)
 
 <div align="center">
