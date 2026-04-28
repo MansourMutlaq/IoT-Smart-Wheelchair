@@ -21,6 +21,18 @@ An innovative IoT system designed for autonomous mobility and real-time health m
 
 ---
 
+
+## 🛡️ Security & Network Infrastructure (CIA Triad Focus)
+
+As an IT specialization project, the architecture was built on Cyber Security principles to ensure a robust **Secure Edge Node**:
+
+* **Network Hardening:** Established a standalone, WPA2-PSK encrypted local network to isolate control traffic. This eliminates external "Man-in-the-Middle" (MitM) risks.
+* **High Availability (Heartbeat):** Implemented a custom Heartbeat protocol between the UI and ESP32. If the link is severed, the system triggers an immediate emergency halt, protecting against physical DoS (Denial of Service) scenarios.
+* **Data Integrity:** Used Non-blocking Asynchronous communication to ensure telemetry data (GPS, Pulse) is delivered accurately without interfering with the motor control loops.
+
+---
+
+
 ## 🎯 System Architecture
 
 ```text
@@ -100,7 +112,7 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 
 ## 🛡️ System Reliability & Failsafe Logic
 
-The application features a proactive **Connectivity Monitor**. If the heartbeat between the **Edge Node (ESP32)** and the **Dashboard** is interrupted, the UI instantly switches to a high-alert Failsafe mode to ensure safety.
+The application features a proactive Connectivity Monitor. If the heartbeat between the Edge Node (ESP32) and the Dashboard is interrupted, the UI instantly switches to a high-alert Failsafe mode.
 
 <div align="center">
   <table style="border-collapse: collapse; border: none; background-color: #ffffff; padding: 10px; border-radius: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
@@ -175,6 +187,18 @@ Throughout the development phase, several technical hurdles were addressed to en
 * **Asynchronous Concurrency:** Managed simultaneous sensor data polling (Ultrasonic & GPS) while maintaining a responsive Web Server on the ESP32. This was solved by utilizing non-blocking libraries to prevent CPU hang-ups.
 * **Network Reliability (Heartbeat Mechanism):** Designed a custom "Heartbeat" failsafe. If the control device (Phone/Laptop) loses connection to the Edge Node, the system automatically triggers an emergency stop to prevent unguided movement.
 * **Power Management:** Integrated solar charging logic to maintain stable voltage for the ESP32 and motor drivers, balancing the variable output from solar panels with the high current demands of the motors.
+
+---
+
+
+🚧 Technical Challenges & Engineering Solutions
+Asynchronous Concurrency: Managed simultaneous sensor polling while maintaining a responsive Web Server. Solved by using non-blocking libraries to prevent CPU hangs.
+
+Network Reliability (Heartbeat): Designed a failsafe that triggers an emergency stop if the connection between the controller and the Edge Node is severed.
+
+Power Management: Integrated solar charging logic to maintain stable voltage for the ESP32 and motor drivers.
+
+System Stability: Implemented Hardware Watchdog Timer (WDT) to ensure automatic recovery from any software hangs.
 
 ---
 
