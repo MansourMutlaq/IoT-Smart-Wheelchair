@@ -166,16 +166,48 @@ Open your browser and navigate to: [http://192.168.4.1](http://192.168.4.1)
 
 ---
 
-## 👨‍💻 Development Team
-Developed at **Qassim University** (College of Computer, IT Department) - **Grade: A+**
 
-### 👥 Developers:
-- **[Mansour Mutlaq Alharbi](https://www.linkedin.com/in/mansour-alharbi-129407350)** (Lead Developer | IoT Solutions & Security)
-- **Saud Faisal Alfadda** (Hardware Integration)
-- **Meshari Abdullah Alsaegh** (System Requirements)
+## 🚧 Engineering Challenges & Strategic Solutions
+
+Throughout the development phase, several technical hurdles were addressed to ensure system stability and user safety:
+
+### 🛠️ Technical Hurdles Overcome
+* **Asynchronous Concurrency:** Managed simultaneous sensor data polling (Ultrasonic & GPS) while maintaining a responsive Web Server on the ESP32. This was solved by utilizing non-blocking libraries to prevent CPU hang-ups.
+* **Network Reliability (Heartbeat Mechanism):** Designed a custom "Heartbeat" failsafe. If the control device (Phone/Laptop) loses connection to the Edge Node, the system automatically triggers an emergency stop to prevent unguided movement.
+* **Power Management:** Integrated solar charging logic to maintain stable voltage for the ESP32 and motor drivers, balancing the variable output from solar panels with the high current demands of the motors.
+
+---
+
+
+## 🚀 Future Roadmap (Scalability & Security)
+
+To transition this project from a prototype to an enterprise-grade IoT solution, the following enhancements are planned:
+
+### 🔐 Advanced Security & Connectivity
+* **Cloud Integration (IoT Hub):** Migrating from a local Edge Node to a centralized Cloud environment (Azure IoT or AWS IoT) for remote monitoring and long-term data analytics.
+* **Encrypted Telemetry:** Implementing TLS/SSL encryption for all data packets sent between the wheelchair and the dashboard to ensure patient data privacy.
+* **5G/LTE Expansion:** Integrating a GSM/LTE module for ubiquitous connectivity, moving beyond the limitations of local WiFi range.
+
+### 🧠 Intelligent Navigation
+* **AI-Powered Obstacle Detection:** Replacing ultrasonic sensors with an AI-enabled camera (Computer Vision) for advanced terrain recognition and dynamic object avoidance.
+* **Predictive Maintenance:** Using machine learning to analyze motor performance and battery health, predicting potential hardware failures before they occur.
+
+---
+
+
+## 👥 Development Team
+
+Developed at **Qassim University** (IT Department) - **Final Grade: A+**
+
+### 🥇 Engineering & Technical Lead:
+* **[Mansour Mutlaq Alharbi](https://github.com/MansourMutlaq)** *Core System Implementation: Circuit Design, Hardware Integration, ESP32 Firmware Development (C++), and Dashboard UI/UX.*
+
+### 📂 Research & Presentation Team:
+* **Saud Faisal Alfadda** *Academic Research & Final Presentation Delivery.*
+* **Meshari Abdullah Alsaegh** *Requirements Documentation & Final Presentation Delivery.*
 
 ### 🎓 Under the Supervision of:
-- **Dr. Salim El-Khediri** (Academic Supervisor)
+* **Dr. Salim El-Khediri**
 
 ---
 
