@@ -195,18 +195,19 @@ To transition this project from a prototype to an enterprise-grade IoT solution,
 ---
 
 
-## 👥 Development Team
+## 👥 Project Team & Roles
 
 Developed at **Qassim University** (IT Department) - **Final Grade: A+**
 
-### 🥇 Engineering & Technical Lead:
-* **[Mansour Mutlaq Alharbi](https://github.com/MansourMutlaq)** *Core System Implementation: Circuit Design, Hardware Integration, ESP32 Firmware Development (C++), and Dashboard UI/UX.*
+### 🥇 Technical Lead & Full-Stack Developer
+* **[Mansour Mutlaq Alharbi](https://github.com/MansourMutlaq)**
+  * *Primary Responsibility:* End-to-end system engineering, including hardware circuit integration, ESP32 firmware development, autonomous navigation logic, and the real-time web dashboard.
 
-### 📂 Research & Presentation Team:
-* **Saud Faisal Alfadda** *Academic Research & Final Presentation Delivery.*
-* **Meshari Abdullah Alsaegh** *Requirements Documentation & Final Presentation Delivery.*
+### 📚 Academic Contributors
+* **Saud Faisal Alfadda** (Research & Final Presentation)
+* **Meshari Abdullah Alsaegh** (Documentation & Final Presentation)
 
-### 🎓 Under the Supervision of:
+### 🎓 Academic Supervision
 * **Dr. Salim El-Khediri**
 
 ---
