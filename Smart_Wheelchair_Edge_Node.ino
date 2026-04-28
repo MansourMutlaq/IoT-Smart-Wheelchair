@@ -1,15 +1,19 @@
 /*
  * =========================================================================================
  * Project: IoT-Enabled Solar-Powered Smart Wheelchair
- * Project Lead & Core Developer: Mansour Mutlaq Alharbi
- * Support Team: Saud Faisal Alfadda, Meshari Abdullah Alsaegh
- * University: Qassim University - IT Department (Under the supervision of Dr. Salim El-Khediri)
- * * Description: 
- * This firmware controls the ESP32 Edge Node for the Smart Wheelchair. Core functionalities:
- * - Asynchronous Web Server for real-time UI telemetry and manual control.
- * - Smart Obstacle Avoidance Algorithm (Ultrasonic Radar Sweep).
- * - Real-time GPS Tracking via Hardware Serial.
- * - Hardware Watchdog Timer (WDT) & Heartbeat Connection Failsafe.
+ * -----------------------------------------------------------------------------------------
+ * Lead Systems & Security Engineer: Mansour Mutlaq Alharbi
+ * Infrastructure & Research Support: Saud Faisal Alfadda, Meshari Abdullah Alsaegh
+ * -----------------------------------------------------------------------------------------
+ * Security & Network Specifications:
+ * - Network Layer: Standalone WPA2-PSK Encrypted Access Point (Edge Node).
+ * - System Availability: Hardware Watchdog Timer (WDT) & Heartbeat Monitoring.
+ * - Data Integrity: Real-time Serial Telemetry & Non-blocking Async Architecture.
+ * -----------------------------------------------------------------------------------------
+ * Description: 
+ * A secure Edge Computing solution designed to manage autonomous mobility. 
+ * Features include smart obstacle avoidance, GPS tracking, and a failsafe 
+ * mechanism to ensure system reliability in off-grid environments.
  * =========================================================================================
  */
 
