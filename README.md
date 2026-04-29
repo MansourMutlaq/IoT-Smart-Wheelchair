@@ -1,15 +1,25 @@
-# ♿ IoT-Enabled Smart Wheelchair (Secure Edge Computing)
+# ♿ IoT-Enabled Solar-Powered Smart Wheelchair
 
-<p align="center">
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white">
-  <img src="https://img.shields.io/badge/Network-Secure_Local_AP-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=for-the-badge">
-</p>
+<div align="center">
 
-An innovative IoT system designed for autonomous mobility and real-time health monitoring. This project serves as a **Secure Local Edge Node**, processing sensor data and providing a web-based dashboard without external internet dependency, ensuring privacy and high reliability for users.
+<br />
 
----
+<img src="https://github.com/user-attachments/assets/c0dc0aa0-ef29-4f8c-a6d7-dcd749d767f0" width="450" alt="Smart Wheelchair Logo">
+
+<br />
+<br />
+
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+<img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" alt="Arduino">
+<img src="https://img.shields.io/badge/Network-Secure_Local_AP-red?style=for-the-badge" alt="Secure Local AP">
+<img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=for-the-badge" alt="Saudi Vision 2030">
+
+<br />
+<br />
+
+*An innovative IoT system designed for autonomous mobility and real-time health monitoring. This project serves as a **Secure Local Edge Node**, processing sensor data and providing a web-based dashboard without external internet dependency, ensuring privacy and high reliability for users.*
+
+</div>
 
 ## 🚀 Key Features
 
