@@ -76,9 +76,9 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 </tr>
 </table>
 </div>
+
+
 ---
-
-
 
 
 ##  User Interface & System Test
@@ -95,24 +95,36 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 </tr>
 </table>
 </div>
+
+
 ---
 
-##  System Reliability & Failsafe Logic
 
-The application features a proactive Connectivity Monitor. If the heartbeat between the Edge Node (ESP32) and the Dashboard is interrupted, the UI instantly switches to a high-alert Failsafe mode.
+##  System Reliability & Failsafe Mechanisms
+
+Designed with safety-critical reliability in mind, the system employs a proactive Edge-to-Client heartbeat monitor. In the event of network interruption or hardware failure, the UI immediately triggers a high-alert Failsafe mode, while providing frictionless access to manual overrides and SOS protocols.
 
 <div align="center">
-  <table style="border-collapse: collapse; border: none; background-color: #ffffff; padding: 10px; border-radius: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
-    <tr>
-      <td style="border: none; text-align: center; padding: 20px;">
-        <img src="https://github.com/user-attachments/assets/d4145b2b-53ed-44a7-8ae6-74e90ccf73c5" width="280" alt="Failsafe Connection Lost Mode" style="border-radius: 12px;">
-        <br><br>
-        <b style="color: #d32f2f;">🔴 Connection Loss Detection</b><br>
-        <i style="font-size: 0.9em; color: #555;">Instant visual feedback and system lockout when the wheelchair is unreachable.</i>
-      </td>
-    </tr>
-  </table>
+<table>
+<tr>
+<td align="center"><img src="<img width="730" height="1280" alt="photo_5834698387582816803_y" src="https://github.com/user-attachments/assets/6c076ee4-891d-4f41-bb65-8ff00d5143b6" />
+" width="350" alt="Connection Loss Detection"></td>
+<td align="center"><img src="<img width="610" height="1280" alt="photo_5834698387582816804_y" src="https://github.com/user-attachments/assets/ae12511b-80ed-4bdc-a6a1-54ef1d7e7334" />
+" width="350" alt="Emergency SOS Controls"></td>
+</tr>
+<tr>
+<td align="center">
+<b>🔴 Connection Loss Detection</b><br>
+<i>Real-time heartbeat monitoring with instant visual alerts and system lockout.</i>
+</td>
+<td align="center">
+<b>🚨 Emergency SOS Protocols</b><br>
+<i>Frictionless access to manual overrides and emergency communication controls.</i>
+</td>
+</tr>
+</table>
 </div>
+
 
 ---
 
@@ -123,14 +135,18 @@ The wheelchair employs a "Sense-Think-Act" cycle to ensure user safety:
 - **Distance 25cm - 40cm:** Warning state (Buzzer alert + Speed reduction).
 - **Distance < 25cm:** Critical state (**Auto-stop + Smart Avoidance Algorithm activated**).
 
+
 ---
+
 
 ##  Engineering Challenges Overcome
 - **Concurrency:** Managed sensor readings and WebServer requests simultaneously using non-blocking programming (avoiding `delay()`).
 - **System Stability:** Implemented **Hardware Watchdog Timer (WDT)** to ensure the ESP32 recovers automatically from any software hangs.
 - **Power Efficiency:** Optimized WiFi sleep modes to balance between dashboard responsiveness and battery longevity.
 
+
 ---
+
 
 ##  Getting Started
 
@@ -163,6 +179,7 @@ Pass: Safe@Wheel2030
 Open your browser and navigate to: [http://192.168.4.1](http://192.168.4.1)
 ```
 
+
 ---
 
 
@@ -175,6 +192,7 @@ Throughout the development phase, several technical hurdles were addressed to en
 * **Network Reliability (Heartbeat Mechanism):** Designed a custom "Heartbeat" failsafe. If the control device (Phone/Laptop) loses connection to the Edge Node, the system automatically triggers an emergency stop to prevent unguided movement.
 * **Power Management:** Integrated solar charging logic to maintain stable voltage for the ESP32 and motor drivers, balancing the variable output from solar panels with the high current demands of the motors.
 
+
 ---
 
 
@@ -186,6 +204,7 @@ Network Reliability (Heartbeat): Designed a failsafe that triggers an emergency 
 Power Management: Integrated solar charging logic to maintain stable voltage for the ESP32 and motor drivers.
 
 System Stability: Implemented Hardware Watchdog Timer (WDT) to ensure automatic recovery from any software hangs.
+
 
 ---
 
@@ -202,6 +221,7 @@ To transition this project from a prototype to an enterprise-grade IoT solution,
 ###  Intelligent Navigation
 * **AI-Powered Obstacle Detection:** Replacing ultrasonic sensors with an AI-enabled camera (Computer Vision) for advanced terrain recognition and dynamic object avoidance.
 * **Predictive Maintenance:** Using machine learning to analyze motor performance and battery health, predicting potential hardware failures before they occur.
+
 
 ---
 
