@@ -1,6 +1,6 @@
 <div align="center">
 
-#  IoT-Enabled Solar-Powered Smart Wheelchair
+# IoT-Enabled Solar-Powered Smart Wheelchair
 
 <img src="https://github.com/user-attachments/assets/c0dc0aa0-ef29-4f8c-a6d7-dcd749d767f0" width="500" alt="Smart Wheelchair Logo"><br>
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"><img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"><img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white"><img src="https://img.shields.io/badge/Network-Secure_Local_AP-red?style=for-the-badge"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=for-the-badge">
@@ -12,7 +12,7 @@
 
 <br><br>
 
-###  Core Capabilities
+### Core Capabilities
 </div>
 
 * **Autonomous Avoidance:** Real-time obstacle detection and navigation using Ultrasonic sensors.
@@ -20,24 +20,21 @@
 * **Edge Computing:** Powered by ESP32 for secure, offline local network control.
 * **Sustainable Power:** Integrated solar charging system for extended operational time.
 
-<div align="center">
-</div>
+---
 
+## Key Features
 
-##  Key Features
-
--  **Smart Navigation:** Real-time obstacle avoidance using Ultrasonic sensors and Servo scanning.
--  **Secure Connectivity:** Standalone WPA2-encrypted Access Point (AP) for off-grid operations.
--  **Live Telemetry:** Web-based dashboard for heart rate, GPS coordinates, and system status.
--  **Emergency SOS:** Instant alarm and GPS location sharing for rapid emergency response.
--  **Sustainable Energy:** Solar-powered battery management for extended range.
+- **Smart Navigation:** Real-time obstacle avoidance using Ultrasonic sensors and Servo scanning.
+- **Secure Connectivity:** Standalone WPA2-encrypted Access Point (AP) for off-grid operations.
+- **Live Telemetry:** Web-based dashboard for heart rate, GPS coordinates, and system status.
+- **Emergency SOS:** Instant alarm and GPS location sharing for rapid emergency response.
+- **Sustainable Energy:** Solar-powered battery management for extended range.
 
 ---
 
+## Security & Network Infrastructure (CIA Triad Focus)
 
-##  Security & Network Infrastructure (CIA Triad Focus)
-
-As an IT specialization project, the architecture was built on Cyber Security principles to ensure a robust **Secure Edge Node**:
+As an Information Technology project, the architecture was built on core security principles to ensure a robust **Secure Edge Node**:
 
 * **Network Hardening:** Established a standalone, WPA2-PSK encrypted local network to isolate control traffic. This eliminates external "Man-in-the-Middle" (MitM) risks.
 * **High Availability (Heartbeat):** Implemented a custom Heartbeat protocol between the UI and ESP32. If the link is severed, the system triggers an immediate emergency halt, protecting against physical DoS (Denial of Service) scenarios.
@@ -45,8 +42,7 @@ As an IT specialization project, the architecture was built on Cyber Security pr
 
 ---
 
-
-##  System Architecture
+## System Architecture
 
 ```text
 Sensors (Perception) <-> ESP32 (Control) <-> Async Web Server (Application)
@@ -59,8 +55,21 @@ The system follows a modular architecture consisting of three main layers:
 
 ---
 
+## Core Hardware Architecture
 
-##  Hardware Prototype & Build
+The system's intelligence is powered by the **ESP32 Microcontroller**, ensuring real-time edge computing, secure local network hosting, and seamless sensor integration.
+
+| Component | Function in System |
+| :--- | :--- |
+| **ESP32 Board** | Core processing, Local Wi-Fi AP setup, and Web Server hosting. |
+| **Ultrasonic Sensors** | Forward obstacle detection and autonomous emergency braking. |
+| **GPS Module** | Real-time geographic location tracking for the telemetry dashboard. |
+| **Solar Panel System** | Sustainable battery charging for extended operational range. |
+| **Motor Drivers** | Translating digital logic signals into mechanical chair movement. |
+
+---
+
+## Hardware Prototype & Build
 
 The wheelchair Prototype is built with a custom-engineered structure, integrated components, and sustainable power management.
 
@@ -77,11 +86,9 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 </table>
 </div>
 
-
 ---
 
-
-##  User Interface & System Test
+## User Interface & System Test
 
 <div align="center">
 <table>
@@ -96,11 +103,9 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 </table>
 </div>
 
-
 ---
 
-
-##  System Reliability & Failsafe Mechanisms
+## System Reliability & Failsafe Mechanisms
 
 Designed with safety-critical reliability in mind, the system employs a proactive Edge-to-Client heartbeat monitor. In the event of network interruption or hardware failure, the UI immediately triggers a high-alert Failsafe mode, while providing frictionless access to manual overrides and SOS protocols.
 
@@ -112,41 +117,58 @@ Designed with safety-critical reliability in mind, the system employs a proactiv
 </tr>
 <tr>
 <td align="center">
-<b>🔴 Connection Loss Detection</b><br>
+<b>Connection Loss Detection</b><br>
 <i>Real-time heartbeat monitoring with instant visual alerts and system lockout.</i>
 </td>
 <td align="center">
-<b>🚨 Manual Override & SOS Protocols</b><br>
+<b>Manual Override & SOS Protocols</b><br>
 <i>Direct dashboard controls for manual navigation and instant emergency alerts.</i>
 </td>
 </tr>
 </table>
-</div>
 
 
 ---
+<div align="center">
+<h3>🔊 Live SOS Alarm Demonstration</h3>
 
+<table width="350">
+  <tr>
+    <td align="center">
+      <video src="https://github.com/user-attachments/assets/5860ed8b-de36-46ef-b4dd-8be8f79f0c0b" width="100%" controls></video>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Bridging Digital Monitoring with Physical Safety</b><br>
+      <i>This demonstration showcases the system's active emergency response. Upon triggering the SOS protocol via the dashboard, the ESP32 instantaneously activates a high-decibel onboard buzzer. This critical failsafe ensures immediate physical-world intervention by notifying bystanders during sudden medical crises (e.g., hypoglycemia or fainting).</i>
+    </td>
+  </tr>
+</table>
+</div>
 
-##  System Logic & Control Flow
+---
+
+## System Logic & Control Flow
+
 The wheelchair employs a "Sense-Think-Act" cycle to ensure user safety:
 - **Distance > 40cm:** Normal operation (Manual control via Dashboard).
 - **Distance 25cm - 40cm:** Warning state (Buzzer alert + Speed reduction).
 - **Distance < 25cm:** Critical state (**Auto-stop + Smart Avoidance Algorithm activated**).
 
+---
+
+## Engineering Challenges & Strategic Solutions
+
+Throughout the development phase, several technical hurdles were addressed to ensure system stability:
+* **Asynchronous Concurrency:** Managed simultaneous sensor data polling (Ultrasonic & GPS) while maintaining a responsive Web Server on the ESP32. Solved by utilizing non-blocking programming (avoiding `delay()`) to prevent CPU hangs.
+* **Network Reliability:** Designed the custom "Heartbeat" failsafe to trigger an emergency stop if the connection between the controller and the Edge Node is severed.
+* **Power Management:** Integrated solar charging logic to maintain stable voltage for the ESP32 and motor drivers, balancing the variable output from solar panels.
+* **System Stability:** Implemented a **Hardware Watchdog Timer (WDT)** to ensure the ESP32 recovers automatically from any software anomalies.
 
 ---
 
-
-##  Engineering Challenges Overcome
-- **Concurrency:** Managed sensor readings and WebServer requests simultaneously using non-blocking programming (avoiding `delay()`).
-- **System Stability:** Implemented **Hardware Watchdog Timer (WDT)** to ensure the ESP32 recovers automatically from any software hangs.
-- **Power Efficiency:** Optimized WiFi sleep modes to balance between dashboard responsiveness and battery longevity.
-
-
----
-
-
-##  Getting Started
+## Getting Started
 
 ### Prerequisites
 - **Hardware:** ESP32 Dev Board, L298N Driver, HC-SR04, NEO-6M GPS, Pulse Sensor.
@@ -154,7 +176,6 @@ The wheelchair employs a "Sense-Think-Act" cycle to ensure user safety:
 - **Libraries:** `ESPAsyncWebServer`, `ESP32Servo`, `TinyGPS++`.
 
 ### Installation & Setup
-
 1. **Clone the Repo:**
 ```bash
 git clone [https://github.com/MansourMutlaq/IoT-Smart-Wheelchair.git](https://github.com/MansourMutlaq/IoT-Smart-Wheelchair.git)
@@ -177,52 +198,21 @@ Pass: Safe@Wheel2030
 Open your browser and navigate to: [http://192.168.4.1](http://192.168.4.1)
 ```
 
-
 ---
 
-
-##  Engineering Challenges & Strategic Solutions
-
-Throughout the development phase, several technical hurdles were addressed to ensure system stability and user safety:
-
-###  Technical Hurdles Overcome
-* **Asynchronous Concurrency:** Managed simultaneous sensor data polling (Ultrasonic & GPS) while maintaining a responsive Web Server on the ESP32. This was solved by utilizing non-blocking libraries to prevent CPU hang-ups.
-* **Network Reliability (Heartbeat Mechanism):** Designed a custom "Heartbeat" failsafe. If the control device (Phone/Laptop) loses connection to the Edge Node, the system automatically triggers an emergency stop to prevent unguided movement.
-* **Power Management:** Integrated solar charging logic to maintain stable voltage for the ESP32 and motor drivers, balancing the variable output from solar panels with the high current demands of the motors.
-
-
----
-
-
- Technical Challenges & Engineering Solutions
-Asynchronous Concurrency: Managed simultaneous sensor polling while maintaining a responsive Web Server. Solved by using non-blocking libraries to prevent CPU hangs.
-
-Network Reliability (Heartbeat): Designed a failsafe that triggers an emergency stop if the connection between the controller and the Edge Node is severed.
-
-Power Management: Integrated solar charging logic to maintain stable voltage for the ESP32 and motor drivers.
-
-System Stability: Implemented Hardware Watchdog Timer (WDT) to ensure automatic recovery from any software hangs.
-
-
----
-
-
-##  Future Roadmap (Scalability & Security)
+## Future Roadmap (Scalability & Security)
 
 To transition this project from a prototype to an enterprise-grade IoT solution, the following enhancements are planned:
 
-###  Advanced Security & Connectivity
+### Advanced Security & Connectivity
 * **Cloud Integration (IoT Hub):** Migrating from a local Edge Node to a centralized Cloud environment (Azure IoT or AWS IoT) for remote monitoring and long-term data analytics.
 * **Encrypted Telemetry:** Implementing TLS/SSL encryption for all data packets sent between the wheelchair and the dashboard to ensure patient data privacy.
 * **5G/LTE Expansion:** Integrating a GSM/LTE module for ubiquitous connectivity, moving beyond the limitations of local WiFi range.
 
-###  Intelligent Navigation
+### Intelligent Navigation
 * **AI-Powered Obstacle Detection:** Replacing ultrasonic sensors with an AI-enabled camera (Computer Vision) for advanced terrain recognition and dynamic object avoidance.
-* **Predictive Maintenance:** Using machine learning to analyze motor performance and battery health, predicting potential hardware failures before they occur.
-
 
 ---
-
 
 ## 👥 Project Team & Academic Context
 
