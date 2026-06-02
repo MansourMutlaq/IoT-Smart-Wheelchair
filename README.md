@@ -107,10 +107,8 @@ Designed with safety-critical reliability in mind, the system employs a proactiv
 <div align="center">
 <table>
 <tr>
-<td align="center"><img src="<img width="730" height="1280" alt="photo_5834698387582816803_y" src="https://github.com/user-attachments/assets/6c076ee4-891d-4f41-bb65-8ff00d5143b6" />
-" width="350" alt="Connection Loss Detection"></td>
-<td align="center"><img src="<img width="610" height="1280" alt="photo_5834698387582816804_y" src="https://github.com/user-attachments/assets/ae12511b-80ed-4bdc-a6a1-54ef1d7e7334" />
-" width="350" alt="Emergency SOS Controls"></td>
+<td align="center"><img src="https://github.com/user-attachments/assets/6c076ee4-891d-4f41-bb65-8ff00d5143b6" width="260" height="530" alt="Connection Loss Detection"></td>
+<td align="center"><img src="https://github.com/user-attachments/assets/ae12511b-80ed-4bdc-a6a1-54ef1d7e7334" width="260" height="530" alt="Emergency SOS Controls"></td>
 </tr>
 <tr>
 <td align="center">
@@ -118,8 +116,8 @@ Designed with safety-critical reliability in mind, the system employs a proactiv
 <i>Real-time heartbeat monitoring with instant visual alerts and system lockout.</i>
 </td>
 <td align="center">
-<b>🚨 Emergency SOS Protocols</b><br>
-<i>Frictionless access to manual overrides and emergency communication controls.</i>
+<b>🚨 Manual Override & SOS Protocols</b><br>
+<i>Direct dashboard controls for manual navigation and instant emergency alerts.</i>
 </td>
 </tr>
 </table>
