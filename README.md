@@ -88,36 +88,26 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 ## 📱 User Interface (Dashboard Showcase)
 
 <div align="center">
-  <table style="width: 100%; text-align: center;">
-    <tr>
-      <td style="padding: 10px; width: 50%;">
-        <b>📱 Overview & Telemetry</b><br><br>
-        <img src="https://github.com/user-attachments/assets/9ac3bf8c-598c-481c-9894-eee6ad8815d2" width="250"><br><br>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none; width: 100%;">
+    <tr style="border: none;">
+      <td align="center" style="border: none; padding: 20px; width: 50%; vertical-align: top;">
+        <h3>📱 Overview & Telemetry</h3>
+        <br>
+        <img src="https://github.com/user-attachments/assets/9ac3bf8c-598c-481c-9894-eee6ad8815d2" width="280" alt="Real-time Dashboard">
+        <br><br>
         <i>Real-time Dashboard</i>
       </td>
-      <td style="padding: 10px; width: 50%;">
-        <b>🪑 Chair Movement Control</b><br><br>
-        <img <img width="464" height="832" alt="IMG_0895" src="https://github.com/user-attachments/assets/883f12d4-1b1f-4497-816d-7415c43148be" />
-><br><br>
+      
+      <td align="center" style="border: none; padding: 20px; width: 50%; vertical-align: top;">
+        <h3>🪑 Chair Movement Control</h3>
+        <br>
+        <img src="https://github.com/user-attachments/assets/883f12d4-1b1f-4497-816d-7415c43148be" width="280" alt="Manual & Auto Avoidance">
+        <br><br>
         <i>Manual & Auto Avoidance</i>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; width: 50%;">
-        <b>🚨 SOS Emergency Alert</b><br><br>
-        <img src="https://github.com/user-attachments/assets/9ac3bf8c-598c-481c-9894-eee6ad8815d2" width="250"><br><br>
-        <i>Emergency Mode Activated</i>
-      </td>
-      <td style="padding: 10px; width: 50%;">
-        <b>🗺️ GPS Location Tracking</b><br><br>
-        <img src="https://github.com/user-attachments/assets/9ac3bf8c-598c-481c-9894-eee6ad8815d2" width="250"><br><br>
-        <i>Live Map Navigation</i>
       </td>
     </tr>
   </table>
 </div>
-
----
 
 ---
 
