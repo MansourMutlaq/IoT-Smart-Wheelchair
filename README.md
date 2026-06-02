@@ -2,7 +2,13 @@
 
 # IoT-Enabled Solar-Powered Smart Wheelchair
 
-<img src="https://github.com/user-attachments/assets/c0dc0aa0-ef29-4f8c-a6d7-dcd749d767f0" width="500" alt="Smart Wheelchair Logo"><br>
+<a id="gallery"></a>
+
+<a href="#gallery">
+  <img src="https://github.com/user-attachments/assets/c0dc0aa0-ef29-4f8c-a6d7-dcd749d767f0" width="500" alt="Smart Wheelchair Logo">
+</a>
+<br>
+
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"><img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"><img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white"><img src="https://img.shields.io/badge/Network-Secure_Local_AP-red?style=for-the-badge"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=for-the-badge">
 
 <br><br>
@@ -21,6 +27,7 @@
 * **Sustainable Power:** Integrated solar charging system for extended operational time.
 
 ---
+
 
 ## Key Features
 
@@ -69,6 +76,8 @@ The system's intelligence is powered by the **ESP32 Microcontroller**, ensuring 
 
 ---
 
+
+<a id="gallery"></a>
 ## Hardware Prototype & Build
 
 The wheelchair Prototype is built with a custom-engineered structure, integrated components, and sustainable power management.
@@ -88,13 +97,22 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 
 ---
 
+
 ## User Interface & System Test
 
 <div align="center">
 <table>
 <tr>
-<td align="center"><img src="https://github.com/user-attachments/assets/9ac3bf8c-598c-481c-9894-eee6ad8815d2" width="300" alt="Dashboard"></td>
-<td align="center"><img src="https://github.com/user-attachments/assets/883f12d4-1b1f-4497-816d-7415c43148be" width="300" alt="Chair Control"></td>
+<td align="center">
+  <a href="#gallery">
+    <img src="https://github.com/user-attachments/assets/9ac3bf8c-598c-481c-9894-eee6ad8815d2" width="300" alt="Dashboard">
+  </a>
+</td>
+<td align="center">
+  <a href="#gallery">
+    <img src="https://github.com/user-attachments/assets/883f12d4-1b1f-4497-816d-7415c43148be" width="300" alt="Chair Control">
+  </a>
+</td>
 </tr>
 <tr>
 <td align="center"><b>Real-time Dashboard (Telemetry)</b></td>
@@ -105,6 +123,7 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 
 ---
 
+
 ## System Reliability & Failsafe Mechanisms
 
 Designed with safety-critical reliability in mind, the system employs a proactive Edge-to-Client heartbeat monitor. In the event of network interruption or hardware failure, the UI immediately triggers a high-alert Failsafe mode, while providing frictionless access to manual overrides and SOS protocols.
@@ -112,8 +131,16 @@ Designed with safety-critical reliability in mind, the system employs a proactiv
 <div align="center">
 <table>
 <tr>
-<td align="center"><img src="https://github.com/user-attachments/assets/6c076ee4-891d-4f41-bb65-8ff00d5143b6" width="260" height="530" alt="Connection Loss Detection"></td>
-<td align="center"><img src="https://github.com/user-attachments/assets/ae12511b-80ed-4bdc-a6a1-54ef1d7e7334" width="260" height="530" alt="Emergency SOS Controls"></td>
+<td align="center">
+  <a href="#gallery">
+    <img src="https://github.com/user-attachments/assets/6c076ee4-891d-4f41-bb65-8ff00d5143b6" width="260" height="530" alt="Connection Loss Detection">
+  </a>
+</td>
+<td align="center">
+  <a href="#gallery">
+    <img src="https://github.com/user-attachments/assets/ae12511b-80ed-4bdc-a6a1-54ef1d7e7334" width="260" height="530" alt="Emergency SOS Controls">
+  </a>
+</td>
 </tr>
 <tr>
 <td align="center">
@@ -126,16 +153,20 @@ Designed with safety-critical reliability in mind, the system employs a proactiv
 </td>
 </tr>
 </table>
-
+</div>
 
 ---
+
+
 <div align="center">
 <h3>🔊 Live SOS Alarm Demonstration</h3>
 
 <table width="350">
   <tr>
     <td align="center">
-      <video src="https://github.com/user-attachments/assets/5860ed8b-de36-46ef-b4dd-8be8f79f0c0b" width="100%" controls></video>
+      <a href="#gallery">
+        <video src="https://github.com/user-attachments/assets/5860ed8b-de36-46ef-b4dd-8be8f79f0c0b" width="100%" controls></video>
+      </a>
     </td>
   </tr>
   <tr>
@@ -148,6 +179,7 @@ Designed with safety-critical reliability in mind, the system employs a proactiv
 </div>
 
 ---
+
 
 ## System Logic & Control Flow
 
