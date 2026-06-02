@@ -184,7 +184,7 @@ cd IoT-Smart-Wheelchair
 
 2. **Flash the Code:**
 ```bash
-# Upload 'Smart_Wheelchair_Core.ino' to your ESP32 using Arduino IDE
+# Upload 'firmware/Smart_Wheelchair_Edge_Node.ino' to your ESP32 using Arduino IDE
 ```
 
 3. **Connect to WiFi:**
