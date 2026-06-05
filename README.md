@@ -9,7 +9,7 @@
 </a>
 <br>
 
-<a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/docs" target="_blank"><img src="https://img.shields.io/badge/Network-Secure_Local_AP-red?style=for-the-badge" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair" target="_blank"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=for-the-badge" style="border: none; text-decoration: none;"></a>
+<a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/docs" target="_blank"><img src="https://img.shields.io/badge/Network-Secure_Local_AP-red?style=for-the-badge" style="border: none; text-decoration: none;"></a><a href="https://www.vision2030.gov.sa/" target="_blank"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=for-the-badge" style="border: none; text-decoration: none;"></a>
 
 <br><br>
 
@@ -108,23 +108,20 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 
 
 <div align="center">
+
 <h3>🦽 Prototype Mobility & UI Navigation Tests</h3>
 
-<table width="700">
+<table>
   <tr>
     <td align="center">
-      <video src="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/raw/main/assets/videos/prototype_mobility_test.mp4" width="100%" controls></video>
-      <br>
-      <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/blob/main/assets/videos/prototype_mobility_test.mp4" target="_blank">
-        <b>🎥 View Full Mobility Test</b>
-      </a>
+      <video width="450" autoplay loop muted playsinline>
+        <source src="https://github.com/user-attachments/assets/cdd27cfd-84be-4207-8d72-d4c9f8e80bb9" type="video/mp4">
+      </video>
     </td>
     <td align="center">
-      <video src="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/raw/main/assets/videos/ui_navigation_test.mp4" width="100%" controls></video>
-      <br>
-      <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/blob/main/assets/videos/ui_navigation_test.mp4" target="_blank">
-        <b>🎥 View Full UI Test</b>
-      </a>
+      <video width="450" autoplay loop muted playsinline>
+        <source src="https://github.com/user-attachments/assets/8c45ed53-e692-4f0c-b025-68453c823fe3" type="video/mp4">
+      </video>
     </td>
   </tr>
   <tr>
@@ -138,6 +135,7 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
     </td>
   </tr>
 </table>
+
 </div>
 
 ---
@@ -178,15 +176,13 @@ Designed with safety-critical reliability in mind, the system employs a proactiv
 
 
 <div align="center">
+
 <h3>🔊 Live SOS Alarm Demonstration</h3>
 
-<table width="350">
+<table width="800">
   <tr>
     <td align="center">
-      <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/raw/main/assets/videos/sos_alarm_demonstration.mov" target="_blank">
-        <b>🎥 Click Here to View Full Video</b>
-      </a><br><br>
-      <video src="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/raw/main/assets/videos/sos_alarm_demonstration.mov" width="100%" controls></video>
+      <video src="https://github.com/user-attachments/assets/666d7f2d-7b0d-473f-8da0-fd3de3a02369" width="100%" controls></video>
     </td>
   </tr>
   <tr>
@@ -196,11 +192,10 @@ Designed with safety-critical reliability in mind, the system employs a proactiv
     </td>
   </tr>
 </table>
+
 </div>
 
 ---
-
-
 ## System Logic & Control Flow
 
 The wheelchair employs a "Sense-Think-Act" cycle to ensure user safety:
