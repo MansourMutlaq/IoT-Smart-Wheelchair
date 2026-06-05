@@ -9,17 +9,18 @@
 </a>
 <br>
 
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"><img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"><img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white"><img src="https://img.shields.io/badge/Network-Secure_Local_AP-red?style=for-the-badge"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=for-the-badge">
+<a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/docs" target="_blank"><img src="https://img.shields.io/badge/Network-Secure_Local_AP-red?style=for-the-badge" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair" target="_blank"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=for-the-badge" style="border: none; text-decoration: none;"></a>
 
 <br><br>
 
 <b>An innovative IoT system designed for autonomous mobility and real-time health monitoring.</b><br>
 <i>This project serves as a <b>Secure Local Edge Node</b>, processing sensor data and providing a web-based dashboard without external internet dependency, ensuring privacy and high reliability for users.</i>
 
+</div>
+
 <br><br>
 
 ### Core Capabilities
-</div>
 
 * **Autonomous Avoidance:** Real-time obstacle detection and navigation using Ultrasonic sensors.
 * **Live Telemetry & Tracking:** Continuous monitoring of vital signs and precise GPS positioning.
