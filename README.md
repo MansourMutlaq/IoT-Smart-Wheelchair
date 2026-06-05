@@ -4,8 +4,8 @@
 
 <a id="gallery"></a>
 
-<a href="#gallery">
-  <img src="https://github.com/user-attachments/assets/c0dc0aa0-ef29-4f8c-a6d7-dcd749d767f0" width="500" alt="Smart Wheelchair Logo">
+<a href="assets/images/project_logo.png" target="_blank">
+  <img src="assets/images/project_logo.png" width="500" alt="Smart Wheelchair Logo">
 </a>
 <br>
 
@@ -85,8 +85,16 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 <div align="center">
 <table>
 <tr>
-<td align="center"><img src="https://github.com/user-attachments/assets/bdc8f377-eac0-47c1-9270-4f7b9e214f02" width="350" height="400" alt="Prototype Overview"></td>
-<td align="center"><img src="https://github.com/user-attachments/assets/d00d56b0-d05d-4367-8fdc-9938f8b990d3" width="350" height="400" alt="Solar Integration"></td>
+<td align="center">
+  <a href="assets/images/prototype_overview.jpg" target="_blank">
+    <img src="assets/images/prototype_overview.jpg" width="350" height="400" alt="Prototype Overview">
+  </a>
+</td>
+<td align="center">
+  <a href="assets/images/solar_integration.jpg" target="_blank">
+    <img src="assets/images/solar_integration.jpg" width="350" height="400" alt="Solar Integration">
+  </a>
+</td>
 </tr>
 <tr>
 <td align="center"><b>Final Prototype (Overview)</b></td>
@@ -98,26 +106,36 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 ---
 
 
-## User Interface & System Test
-
 <div align="center">
-<table>
-<tr>
-<td align="center">
-  <a href="#gallery">
-    <img src="https://github.com/user-attachments/assets/9ac3bf8c-598c-481c-9894-eee6ad8815d2" width="300" alt="Dashboard">
-  </a>
-</td>
-<td align="center">
-  <a href="#gallery">
-    <img src="https://github.com/user-attachments/assets/883f12d4-1b1f-4497-816d-7415c43148be" width="300" alt="Chair Control">
-  </a>
-</td>
-</tr>
-<tr>
-<td align="center"><b>Real-time Dashboard (Telemetry)</b></td>
-<td align="center"><b>Chair Movement Control</b></td>
-</tr>
+<h3>🦽 Prototype Mobility & UI Navigation Tests</h3>
+
+<table width="700">
+  <tr>
+    <td align="center">
+      <video src="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/raw/main/assets/videos/prototype_mobility_test.mp4" width="100%" controls></video>
+      <br>
+      <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/blob/main/assets/videos/prototype_mobility_test.mp4" target="_blank">
+        <b>🎥 View Full Mobility Test</b>
+      </a>
+    </td>
+    <td align="center">
+      <video src="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/raw/main/assets/videos/ui_navigation_test.mp4" width="100%" controls></video>
+      <br>
+      <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/blob/main/assets/videos/ui_navigation_test.mp4" target="_blank">
+        <b>🎥 View Full UI Test</b>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Hardware Actuation & Movement</b><br>
+      <i>Demonstrating the physical response and mobility of the wheelchair prototype.</i>
+    </td>
+    <td align="center">
+      <b>Dashboard Interface Responsiveness</b><br>
+      <i>Real-time testing of the web-based UI controls and telemetry display.</i>
+    </td>
+  </tr>
 </table>
 </div>
 
@@ -132,13 +150,13 @@ Designed with safety-critical reliability in mind, the system employs a proactiv
 <table>
 <tr>
 <td align="center">
-  <a href="#gallery">
-    <img src="https://github.com/user-attachments/assets/6c076ee4-891d-4f41-bb65-8ff00d5143b6" width="260" height="530" alt="Connection Loss Detection">
+  <a href="assets/images/connection_loss_detection.jpg" target="_blank">
+    <img src="assets/images/connection_loss_detection.jpg" height="500" alt="Connection Loss Detection">
   </a>
 </td>
 <td align="center">
-  <a href="#gallery">
-    <img src="https://github.com/user-attachments/assets/ae12511b-80ed-4bdc-a6a1-54ef1d7e7334" width="260" height="530" alt="Emergency SOS Controls">
+  <a href="assets/images/manual_override_sos.jpg" target="_blank">
+    <img src="assets/images/manual_override_sos.jpg" height="500" alt="Emergency SOS Controls">
   </a>
 </td>
 </tr>
@@ -164,9 +182,10 @@ Designed with safety-critical reliability in mind, the system employs a proactiv
 <table width="350">
   <tr>
     <td align="center">
-      <a href="#gallery">
-        <video src="https://github.com/user-attachments/assets/5860ed8b-de36-46ef-b4dd-8be8f79f0c0b" width="100%" controls></video>
-      </a>
+      <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/raw/main/assets/videos/sos_alarm_demonstration.mov" target="_blank">
+        <b>🎥 Click Here to View Full Video</b>
+      </a><br><br>
+      <video src="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/raw/main/assets/videos/sos_alarm_demonstration.mov" width="100%" controls></video>
     </td>
   </tr>
   <tr>
