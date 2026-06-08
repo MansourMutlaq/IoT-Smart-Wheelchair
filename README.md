@@ -5,11 +5,11 @@
 <a id="gallery"></a>
 
 <a href="assets/images/project_logo.png" target="_blank">
-  <img src="assets/images/project_logo.png" width="500" alt="Smart Wheelchair Logo">
+  <img src="assets/images/project_logo.png" width="350" alt="Smart Wheelchair Logo">
 </a>
 <br>
 
-<a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" style="border: none; text-decoration: none;"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/docs" target="_blank"><img src="https://img.shields.io/badge/Network-Secure_Local_AP-red?style=for-the-badge" style="border: none; text-decoration: none;"></a><a href="https://www.vision2030.gov.sa/" target="_blank"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=for-the-badge" style="border: none; text-decoration: none;"></a>
+<img src="https://img.shields.io/badge/Project_Status-Completed-success?style=for-the-badge" alt="Project Completed"> <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License"> <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" style="border: none; text-decoration: none;"></a> <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" style="border: none; text-decoration: none;"></a> <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" style="border: none; text-decoration: none;"></a> <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/docs" target="_blank"><img src="https://img.shields.io/badge/Network-Secure_Local_AP-red?style=for-the-badge" style="border: none; text-decoration: none;"></a> <a href="https://www.vision2030.gov.sa/" target="_blank"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=for-the-badge" style="border: none; text-decoration: none;"></a>
 
 <br><br>
 
@@ -50,18 +50,35 @@ As an Information Technology project, the architecture was built on core securit
 
 ---
 
-## System Architecture
+### System Architecture
 
-```text
-Sensors (Perception) <-> ESP32 (Control) <-> Async Web Server (Application)
-```
+The system follows a modular architecture consisting of three main layers, seamlessly integrated for real-time edge computing:
 
-The system follows a modular architecture consisting of three main layers:
-1. **Perception Layer:** Sensors (Ultrasonic, GPS, Pulse) gathering environmental and biological data.
-2. **Control Layer:** ESP32 processing logic, managing the L298N Driver, and executing avoidance algorithms.
-3. **Application Layer:** Async Web Server providing a real-time UI/Dashboard for monitoring and manual control.
+```mermaid
+flowchart LR
+    subgraph Perception Layer
+        US[Ultrasonic]
+        GPS[GPS Module]
+        Pulse[Pulse Sensor]
+    end
 
----
+    subgraph Control Layer
+        PWR([Solar & Battery])
+        ESP{ESP32 Microcontroller}
+        MD[Motor Driver]
+    end
+
+    subgraph Application Layer
+        UI((Web Dashboard))
+    end
+
+    US -->|Distance| ESP
+    GPS -->|Location| ESP
+    Pulse -->|Vitals| ESP
+    PWR -.->|Power| ESP
+    ESP -->|PWM| MD
+    ESP <-->|Telemetry| UI
+ ```
 
 ## Core Hardware Architecture
 
@@ -237,7 +254,22 @@ Pass: Safe@Wheel2030
 Open your browser and navigate to: [http://192.168.4.1](http://192.168.4.1)
 ```
 
+
 ---
+
+### 📂 Repository Structure
+
+```text
+IoT-Smart-Wheelchair/
+├── assets/
+│   ├── images/            # UI screenshots, hardware photos, and GIFs
+│   └── videos/            # Project video clips and demonstrations
+├── docs/                  # Full technical project report (.pdf)
+├── firmware/              # ESP32 source code (.ino) and libraries
+├── .gitignore             # Ignored files for Git
+├── LICENSE                # MIT License file
+└── README.md              # Project documentation (this file)
+```
 
 ## Future Roadmap (Scalability & Security)
 
@@ -253,6 +285,19 @@ To transition this project from a prototype to an enterprise-grade IoT solution,
 
 ---
 
+
+### 📚 Project Documentation
+For an in-depth analysis of the system architecture, hardware design, and implementation details, you can access the full technical report here:
+
+<div align="center">
+  <a href="docs/IoT_Enabled_Solar_Powered_Smart_Wheelchair.pdf">
+    <img src="https://img.shields.io/badge/Download-Technical_Report_PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Download Report">
+  </a>
+</div>
+
+---
+
+
 ## 👥 Project Team & Academic Context
 
 Developed at **Qassim University** (Department of Information Technology) <br>
@@ -261,14 +306,38 @@ Developed at **Qassim University** (Department of Information Technology) <br>
 
 ### 💻 Lead Systems Engineer & Full-Stack Developer
 * **[Mansour Mutlaq Alharbi](https://www.linkedin.com/in/mansour-alharbi-129407350)**
-  * **Core Contributions:** Architected the end-to-end IoT system, developed ESP32 edge firmware, integrated hardware circuitry (GPS/Ultrasonic), programmed autonomous navigation algorithms, and deployed the real-time telemetry web dashboard.
-
+  * **System Architecture:** Architected the end-to-end IoT system, bridging hardware sensors with a robust edge-computing firmware.
+  * **Core Development:** Developed custom ESP32 firmware and autonomous navigation algorithms to ensure real-time obstacle avoidance.
+  * **Full-Stack Deployment:** Deployed a responsive, real-time telemetry web dashboard to monitor system health and patient vitals.
 ### 📑 Academic & Research Contributors
 * **Saud Faisal Alfadda:** Research & Technical Presentation.
 * **Meshari Abdullah Alsaegh:** Project Documentation & Academic Deliverables.
 
 ### 🎓 Academic Supervision
 * **Dr. Salim El-Khediri**
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+---
+
+## 📫 Let's Connect
+
+Interested in collaborating, have questions about the hardware integration, or want to discuss IoT solutions? Feel free to open an Issue or reach out directly!
+
+<div align="center">
+  <a href="mailto:mansour-alharbi@outlook.com">
+    <img src="https://img.shields.io/badge/Email-Contact_Me-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email">
+  </a>
+  <a href="https://www.linkedin.com/in/mansour-alharbi-129407350" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+</div>
 
 ---
 <div align="center">
