@@ -109,19 +109,15 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 
 <div align="center">
 
-<h3>🦽 Prototype Mobility & UI Navigation Tests</h3>
+<h3> Prototype Mobility & UI Navigation Tests</h3>
 
 <table>
   <tr>
     <td align="center">
-      <video width="450" autoplay loop muted playsinline>
-        <source src="https://github.com/user-attachments/assets/cdd27cfd-84be-4207-8d72-d4c9f8e80bb9" type="video/mp4">
-      </video>
+      <img src="assets/images/prototype_mobility_test.gif" width="380" alt="Hardware Actuation">
     </td>
     <td align="center">
-      <video width="450" autoplay loop muted playsinline>
-        <source src="https://github.com/user-attachments/assets/8c45ed53-e692-4f0c-b025-68453c823fe3" type="video/mp4">
-      </video>
+      <img src="assets/images/ui_navigation_test.gif" width="380" alt="Dashboard Interface">
     </td>
   </tr>
   <tr>
@@ -141,38 +137,34 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 ---
 
 
+
 ## System Reliability & Failsafe Mechanisms
 
 Designed with safety-critical reliability in mind, the system employs a proactive Edge-to-Client heartbeat monitor. In the event of network interruption or hardware failure, the UI immediately triggers a high-alert Failsafe mode, while providing frictionless access to manual overrides and SOS protocols.
 
 <div align="center">
-<table>
-<tr>
-<td align="center">
-  <a href="assets/images/connection_loss_detection.jpg" target="_blank">
-    <img src="assets/images/connection_loss_detection.jpg" height="500" alt="Connection Loss Detection">
-  </a>
-</td>
-<td align="center">
-  <a href="assets/images/manual_override_sos.jpg" target="_blank">
-    <img src="assets/images/manual_override_sos.jpg" height="500" alt="Emergency SOS Controls">
-  </a>
-</td>
-</tr>
-<tr>
-<td align="center">
-<b>Connection Loss Detection</b><br>
-<i>Real-time heartbeat monitoring with instant visual alerts and system lockout.</i>
-</td>
-<td align="center">
-<b>Manual Override & SOS Protocols</b><br>
-<i>Direct dashboard controls for manual navigation and instant emergency alerts.</i>
-</td>
-</tr>
-</table>
+
+<br>
+
+###  Connection Loss Detection
+<a href="assets/images/connection_loss_detection.jpg" target="_blank">
+  <img src="assets/images/connection_loss_detection.jpg" width="600" alt="Connection Loss Detection">
+</a>
+<p><i>Real-time heartbeat monitoring with instant visual alerts and system lockout.</i></p>
+
+<br>
+
+###  Manual Override & SOS Protocols
+<a href="assets/images/manual_override_sos.jpg" target="_blank">
+  <img src="assets/images/manual_override_sos.jpg" width="600" alt="Emergency SOS Controls">
+</a>
+<p><i>Direct dashboard controls for manual navigation and instant emergency alerts.</i></p>
+
 </div>
 
 ---
+
+
 
 
 <div align="center">
