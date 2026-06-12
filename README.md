@@ -154,34 +154,35 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 ---
 
 
-
-## System Reliability & Failsafe Mechanisms
-
-Designed with safety-critical reliability in mind, the system employs a proactive Edge-to-Client heartbeat monitor. In the event of network interruption or hardware failure, the UI immediately triggers a high-alert Failsafe mode, while providing frictionless access to manual overrides and SOS protocols.
-
 <div align="center">
+  <h2> System Interface & Failsafe Controls</h2>
+  <p><i>A secure, edge-to-client mobile interface featuring an <b>Auto-Triggered Red Failsafe Mode</b>. In the event of network disconnection, the UI instantly alerts the patient visually and halts operations, ensuring maximum wheelchair safety and reliability.</i></p>
 
-<br>
-
-###  Connection Loss Detection
-<a href="assets/images/connection_loss_detection.jpg" target="_blank">
-  <img src="assets/images/connection_loss_detection.jpg" width="600" alt="Connection Loss Detection">
-</a>
-<p><i>Real-time heartbeat monitoring with instant visual alerts and system lockout.</i></p>
-
-<br>
-
-###  Manual Override & SOS Protocols
-<a href="assets/images/manual_override_sos.jpg" target="_blank">
-  <img src="assets/images/manual_override_sos.jpg" width="600" alt="Emergency SOS Controls">
-</a>
-<p><i>Direct dashboard controls for manual navigation and instant emergency alerts.</i></p>
-
+  <table align="center">
+    <tr>
+      <td colspan="3" align="center" style="padding: 0px;">
+        <img src="assets/images/emergency-control-views.jpg" width="1000" alt="Smart Wheelchair System Interface" style="display: block;"/>
+      </td>
+    </tr>
+    <tr align="center">
+      <td width="33%">
+        <b>Main Dashboard</b><br>
+        <sub>Real-time monitoring</sub>
+      </td>
+      <td width="33%">
+        <b>Directional Control</b><br>
+        <sub>Manual overrides</sub>
+      </td>
+      <td width="33%">
+        <b>Emergency Protocols</b><br>
+        <sub>Instant failsafe</sub>
+      </td>
+    </tr>
+  </table>
+  
 </div>
 
 ---
-
-
 
 
 <div align="center">
