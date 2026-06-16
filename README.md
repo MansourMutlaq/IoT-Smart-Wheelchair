@@ -2,11 +2,9 @@
 
   <h1> IoT-Enabled Solar-Powered Smart Wheelchair</h1>
 
-  <a href="assets/images/project_logo.png" target="_blank"><img src="assets/images/project_logo.png" width="550" alt="Smart Wheelchair Logo" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); margin-bottom: 12px;"></a><br><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware"><img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware"><img src="https://img.shields.io/badge/Arduino_IDE-00979D?style=flat&logo=arduino&logoColor=white"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware"><img src="https://img.shields.io/badge/ESP32_Core-000000?style=flat&logo=espressif&logoColor=white"></a><img src="https://img.shields.io/badge/Status-Completed-success?style=flat"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=flat">
+  <a href="assets/images/project_logo.png" target="_blank"><img src="assets/images/project_logo.png" width="550" alt="Smart Wheelchair Logo" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); margin-bottom: 12px;"></a><br><a href="https://isocpp.org/" target="_blank"><img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white"></a><a href="https://www.arduino.cc/en/software" target="_blank"><img src="https://img.shields.io/badge/Arduino_IDE-00979D?style=flat&logo=arduino&logoColor=white"></a><a href="https://www.espressif.com/en/products/socs/esp32" target="_blank"><img src="https://img.shields.io/badge/ESP32_Core-000000?style=flat&logo=espressif&logoColor=white"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair"><img src="https://img.shields.io/badge/Status-Completed-success?style=flat"></a><a href="https://www.vision2030.gov.sa/" target="_blank"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=flat"></a>
 
-  <br><br>
-
-  <p style="color: #c9d1d9; font-size: 1.1em; line-height: 1.6;">
+  <p style="color: #c9d1d9; font-size: 1.1em; line-height: 1.6; margin-top: 12px; margin-bottom: 0;">
     An innovative IoT system combining autonomous mobility capabilities with ESP32's powerful processing<br>
     for real-time health monitoring via a <b style="color: #58a6ff;">Secure Local Edge Node</b> without internet dependency.
   </p>
@@ -348,12 +346,12 @@ Interested in collaborating, have questions about the hardware integration, or w
 
 <div align="center">
 
-  <a href="mailto:mansour-alharbi@outlook.com"><img src="https://img.shields.io/badge/Email-Contact_Me-0078D4?style=flat&logo=microsoft-outlook&logoColor=white" alt="Email"></a><a href="https://www.linkedin.com/in/mansour-alharbi-129407350" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mansour-alharbi@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Email-Contact_Me-0078D4?style=flat&logo=microsoft-outlook&logoColor=white" alt="Email"></a><a href="https://www.linkedin.com/in/mansour-alharbi-129407350" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 
   <br>
   
   <p style="color: #8b949e; font-size: 0.9em; margin-top: 10px;">
-    📧 Or drop a message at: <b>mansour-alharbi@outlook.com</b>
+     Or drop a message at: <b>mansour-alharbi@outlook.com</b>
   </p>
 
 </div>
