@@ -1,32 +1,26 @@
 <div align="center">
 
-# IoT-Enabled Solar-Powered Smart Wheelchair
+  <h1> IoT-Enabled Solar-Powered Smart Wheelchair</h1>
 
-<a id="gallery"></a>
+  <a href="assets/images/project_logo.png" target="_blank"><img src="assets/images/project_logo.png" width="550" alt="Smart Wheelchair Logo" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); margin-bottom: 12px;"></a><br><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware"><img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware"><img src="https://img.shields.io/badge/Arduino_IDE-00979D?style=flat&logo=arduino&logoColor=white"></a><a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware"><img src="https://img.shields.io/badge/ESP32_Core-000000?style=flat&logo=espressif&logoColor=white"></a><img src="https://img.shields.io/badge/Status-Completed-success?style=flat"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=flat">
 
-<a href="assets/images/project_logo.png" target="_blank">
-  <img src="assets/images/project_logo.png" width="350" alt="Smart Wheelchair Logo">
-</a>
-<br>
+  <br><br>
 
-<img src="https://img.shields.io/badge/Project_Status-Completed-success?style=for-the-badge" alt="Project Completed"> <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License"> <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" style="border: none; text-decoration: none;"></a> <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" style="border: none; text-decoration: none;"></a> <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/firmware" target="_blank"><img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" style="border: none; text-decoration: none;"></a> <a href="https://github.com/MansourMutlaq/IoT-Smart-Wheelchair/tree/main/docs" target="_blank"><img src="https://img.shields.io/badge/Network-Secure_Local_AP-red?style=for-the-badge" style="border: none; text-decoration: none;"></a> <a href="https://www.vision2030.gov.sa/" target="_blank"><img src="https://img.shields.io/badge/Saudi_Vision-2030-10a37f?style=for-the-badge" style="border: none; text-decoration: none;"></a>
-
-<br><br>
-
-<b>An innovative IoT system designed for autonomous mobility and real-time health monitoring.</b><br>
-<i>This project serves as a <b>Secure Local Edge Node</b>, processing sensor data and providing a web-based dashboard without external internet dependency, ensuring privacy and high reliability for users.</i>
+  <p style="color: #c9d1d9; font-size: 1.1em; line-height: 1.6;">
+    An innovative IoT system combining autonomous mobility capabilities with ESP32's powerful processing<br>
+    for real-time health monitoring via a <b style="color: #58a6ff;">Secure Local Edge Node</b> without internet dependency.
+  </p>
 
 </div>
 
-<br><br>
+---
 
-### Core Capabilities
+###  Core Capabilities
 
-* **Autonomous Avoidance:** Real-time obstacle detection and navigation using Ultrasonic sensors.
-* **Live Telemetry & Tracking:** Continuous monitoring of vital signs and precise GPS positioning.
-* **Edge Computing:** Powered by ESP32 for secure, offline local network control.
-* **Sustainable Power:** Integrated solar charging system for extended operational time.
-
+*  **Autonomous Avoidance:** Real-time obstacle detection and navigation using Ultrasonic sensors.
+*  **Live Telemetry & Tracking:** Continuous monitoring of vital signs and precise GPS positioning.
+*  **Edge Computing:** Powered by ESP32 for secure, offline local network control.
+*  **Sustainable Power:** Integrated solar charging system for extended operational time.
 ---
 
 
@@ -121,91 +115,112 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 </table>
 </div>
 
----
-
-
-<div align="center">
-
-<h3> Prototype Mobility & UI Navigation Tests</h3>
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="assets/images/prototype_mobility_test.gif" width="380" alt="Hardware Actuation">
-    </td>
-    <td align="center">
-      <img src="assets/images/ui_navigation_test.gif" width="380" alt="Dashboard Interface">
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Hardware Actuation & Movement</b><br>
-      <i>Demonstrating the physical response and mobility of the wheelchair prototype.</i>
-    </td>
-    <td align="center">
-      <b>Dashboard Interface Responsiveness</b><br>
-      <i>Real-time testing of the web-based UI controls and telemetry display.</i>
-    </td>
-  </tr>
-</table>
-
-</div>
 
 ---
 
 
 <div align="center">
-  <h2> System Interface & Failsafe Controls</h2>
-  <p><i>A secure, edge-to-client mobile interface featuring an <b>Auto-Triggered Red Failsafe Mode</b>. In the event of network disconnection, the UI instantly alerts the patient visually and halts operations, ensuring maximum wheelchair safety and reliability.</i></p>
 
-  <table align="center">
+  <h3> Prototype Mobility & UI Navigation Tests</h3>
+
+  <table style="border-spacing: 20px; border-collapse: separate;">
     <tr>
-      <td colspan="3" align="center" style="padding: 0px;">
-        <img src="assets/images/emergency-control-views.jpg" width="1000" alt="Smart Wheelchair System Interface" style="display: block;"/>
+      <td align="center" style="padding: 15px; vertical-align: top;">
+        <img src="assets/images/prototype_mobility_test.gif" width="300" alt="Hardware Actuation" style="border-radius: 15px; border: 1px solid #30363d;">
+        <br><br>
+        <div style="line-height: 1.6;">
+          <b style="font-size: 1.1em;">Hardware Actuation & Movement</b><br>
+          <i style="color: #8b949e;">Demonstrating physical response and mobility.</i><br>
+          <sub style="color: #58a6ff; font-weight: bold;">[ ESP32 • C++ • PWM Control ]</sub>
+        </div>
       </td>
-    </tr>
-    <tr align="center">
-      <td width="33%">
-        <b>Main Dashboard</b><br>
-        <sub>Real-time monitoring</sub>
-      </td>
-      <td width="33%">
-        <b>Directional Control</b><br>
-        <sub>Manual overrides</sub>
-      </td>
-      <td width="33%">
-        <b>Emergency Protocols</b><br>
-        <sub>Instant failsafe</sub>
+      <td align="center" style="padding: 15px; vertical-align: top;">
+        <img src="assets/images/ui_navigation_test.gif" width="300" alt="Dashboard Interface" style="border-radius: 15px; border: 1px solid #30363d;">
+        <br><br>
+        <div style="line-height: 1.6;">
+          <b style="font-size: 1.1em;">Dashboard Interface Responsiveness</b><br>
+          <i style="color: #8b949e;">Real-time telemetry and UI navigation.</i><br>
+          <sub style="color: #58a6ff; font-weight: bold;">[ HTML/JS • MQTT • Web-Socket ]</sub>
+        </div>
       </td>
     </tr>
   </table>
-  
+
 </div>
+
 
 ---
 
 
 <div align="center">
 
-<h3>🔊 Live SOS Alarm Demonstration</h3>
+  <h2> System Interface & Failsafe Controls</h2>
+  <p style="line-height: 1.6; color: #c9d1d9;">
+    <i>A secure, edge-to-client mobile interface featuring an <b>Auto-Triggered Red Failsafe Mode</b>. 
+    In the event of network disconnection, the UI instantly alerts the patient visually and halts operations, 
+    ensuring maximum wheelchair safety and reliability.</i>
+  </p>
 
-<table width="800">
-  <tr>
-    <td align="center">
-      <video src="https://github.com/user-attachments/assets/666d7f2d-7b0d-473f-8da0-fd3de3a02369" width="100%" controls></video>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Bridging Digital Monitoring with Physical Safety</b><br>
-      <i>This demonstration showcases the system's active emergency response. Upon triggering the SOS protocol via the dashboard, the ESP32 instantaneously activates a high-decibel onboard buzzer. This critical failsafe ensures immediate physical-world intervention by notifying bystanders during sudden medical crises (e.g., hypoglycemia or fainting).</i>
-    </td>
-  </tr>
-</table>
+  <table style="width: 100%; max-width: 900px; border-collapse: collapse; border: none;">
+    <tr>
+      <td colspan="3" align="center" style="padding: 0px;">
+        <img src="assets/images/emergency-control-views.jpg" width="100%" alt="Smart Wheelchair System Interface" style="display: block; border-radius: 15px; border: 1px solid #30363d; box-shadow: 0 4px 15px rgba(0,0,0,0.5);"/>
+      </td>
+    </tr>
+    <tr align="center" style="height: 60px;">
+      <td width="33%" style="padding-top: 15px;">
+        <b style="color: #ffffff;">Main Dashboard</b><br>
+        <sub style="color: #8b949e;">Real-time monitoring</sub>
+      </td>
+      <td width="33%" style="padding-top: 15px;">
+        <b style="color: #e3b341;">Directional Control</b><br>
+        <sub style="color: #8b949e;">Manual overrides</sub>
+      </td>
+      <td width="33%" style="padding-top: 15px;">
+        <b style="color: #da3633;">Emergency Protocols</b><br>
+        <sub style="color: #8b949e;">Instant failsafe</sub>
+      </td>
+    </tr>
+  </table>
 
 </div>
 
+
 ---
+
+
+<div align="center">
+  <h3>🔊 Live SOS Alarm Demonstration</h3>
+  
+  <table width="800" style="border: none;">
+    <tr>
+      <td align="center" style="padding: 0px;">
+        <video src="https://github.com/user-attachments/assets/666d7f2d-7b0d-473f-8da0-fd3de3a02369" width="100%" controls style="border-radius: 15px;"></video>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding: 20px;">
+        <h3>Bridging Digital Monitoring with Physical Safety</h3>
+        <p style="color: #c9d1d9; line-height: 1.6; font-style: italic; max-width: 700px;">
+          This demonstration showcases the system's active emergency response. Upon triggering the SOS protocol via the dashboard, 
+          the ESP32 instantaneously activates a high-decibel onboard buzzer. This critical failsafe ensures immediate 
+          physical-world intervention by notifying bystanders during sudden medical crises.
+        </p>
+        <table align="center" style="margin-top: 15px; border-collapse: separate; border-spacing: 10px;">
+          <tr>
+            <td style="background: #238636; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em;">   < 1ms Response Time</td>
+            <td style="background: #da3633; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em;">    100dB Buzzer Alert</td>
+            <td style="background: #0969da; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em;">   Offline-First Architecture</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+
 ## System Logic & Control Flow
 
 The wheelchair employs a "Sense-Think-Act" cycle to ensure user safety:
@@ -332,12 +347,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Interested in collaborating, have questions about the hardware integration, or want to discuss IoT solutions? Feel free to open an Issue or reach out directly!
 
 <div align="center">
-  <a href="mailto:mansour-alharbi@outlook.com">
-    <img src="https://img.shields.io/badge/Email-Contact_Me-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email">
-  </a>
-  <a href="https://www.linkedin.com/in/mansour-alharbi-129407350" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
+
+  <a href="mailto:mansour-alharbi@outlook.com"><img src="https://img.shields.io/badge/Email-Contact_Me-0078D4?style=flat&logo=microsoft-outlook&logoColor=white" alt="Email"></a><a href="https://www.linkedin.com/in/mansour-alharbi-129407350" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+
+  <br>
+  
+  <p style="color: #8b949e; font-size: 0.9em; margin-top: 10px;">
+    📧 Or drop a message at: <b>mansour-alharbi@outlook.com</b>
+  </p>
+
 </div>
 
 ---
