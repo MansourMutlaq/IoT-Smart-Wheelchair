@@ -11,7 +11,6 @@
 
 </div>
 
----
 
 ###  Core Capabilities
 
@@ -19,6 +18,7 @@
 *  **Live Telemetry & Tracking:** Continuous monitoring of vital signs and precise GPS positioning.
 *  **Edge Computing:** Powered by ESP32 for secure, offline local network control.
 *  **Sustainable Power:** Integrated solar charging system for extended operational time.
+  
 ---
 
 
@@ -32,6 +32,7 @@
 
 ---
 
+
 ## Security & Network Infrastructure (CIA Triad Focus)
 
 As an Information Technology project, the architecture was built on core security principles to ensure a robust **Secure Edge Node**:
@@ -42,35 +43,15 @@ As an Information Technology project, the architecture was built on core securit
 
 ---
 
+
 ### System Architecture
 
 The system follows a modular architecture consisting of three main layers, seamlessly integrated for real-time edge computing:
 
-```mermaid
-flowchart LR
-    subgraph Perception Layer
-        US[Ultrasonic]
-        GPS[GPS Module]
-        Pulse[Pulse Sensor]
-    end
+![System Architecture](assets/images/system-architecture.png)
 
-    subgraph Control Layer
-        PWR([Solar & Battery])
-        ESP{ESP32 Microcontroller}
-        MD[Motor Driver]
-    end
+---
 
-    subgraph Application Layer
-        UI((Web Dashboard))
-    end
-
-    US -->|Distance| ESP
-    GPS -->|Location| ESP
-    Pulse -->|Vitals| ESP
-    PWR -.->|Power| ESP
-    ESP -->|PWM| MD
-    ESP <-->|Telemetry| UI
- ```
 
 ## Core Hardware Architecture
 
@@ -88,64 +69,98 @@ The system's intelligence is powered by the **ESP32 Microcontroller**, ensuring 
 
 
 <a id="gallery"></a>
-## Hardware Prototype & Build
+##  Hardware Prototype & Build
 
-The wheelchair Prototype is built with a custom-engineered structure, integrated components, and sustainable power management.
+The wheelchair prototype is built with a custom-engineered structure, integrated components, and sustainable power management.
 
 <div align="center">
-<table>
-<tr>
-<td align="center">
-  <a href="assets/images/prototype_overview.jpg" target="_blank">
-    <img src="assets/images/prototype_overview.jpg" width="350" height="400" alt="Prototype Overview">
-  </a>
-</td>
-<td align="center">
-  <a href="assets/images/solar_integration.jpg" target="_blank">
-    <img src="assets/images/solar_integration.jpg" width="350" height="400" alt="Solar Integration">
-  </a>
-</td>
-</tr>
-<tr>
-<td align="center"><b>Final Prototype (Overview)</b></td>
-<td align="center"><b>Solar Power (Integration)</b></td>
-</tr>
-</table>
-</div>
+  <table width="100%" style="border-collapse: collapse; table-layout: fixed; border: none;">
+    
+  <tr>
+      <td width="50%" align="center" style="padding: 10px; vertical-align: top;">
+        <a href="assets/images/prototype_overview.jpg" target="_blank">
+          <img src="assets/images/prototype_overview.jpg" width="350" height="350" style="border-radius: 12px; border: 1px solid #30363d; object-fit: cover;" alt="Prototype Overview">
+        </a>
+      </td>
+      <td width="50%" align="center" style="padding: 10px; vertical-align: top;">
+        <a href="assets/images/solar_integration.jpg" target="_blank">
+          <img src="assets/images/solar_integration.jpg" width="350" height="350" style="border-radius: 12px; border: 1px solid #30363d; object-fit: cover;" alt="Solar Integration">
+        </a>
+      </td>
+    </tr>
 
+  <tr>
+      <td align="center" style="padding: 5px;"><b>Final Prototype (Overview)</b></td>
+      <td align="center" style="padding: 5px;"><b>Solar Power (Integration)</b></td>
+    </tr>
+
+  <tr>
+      <td align="center" style="padding: 5px; vertical-align: top; color: #8b949e;">
+        <i>Custom-engineered chassis for stability and modular access.</i>
+      </td>
+      <td align="center" style="padding: 5px; vertical-align: top; color: #8b949e;">
+        <i>Sustainable energy harvesting circuit for power management.</i>
+      </td>
+    </tr>
+
+  <tr>
+      <td align="center" style="padding: 15px;">
+        <code style="color: #58a6ff;">[ Custom Chassis • Stability ]</code>
+      </td>
+      <td align="center" style="padding: 15px;">
+        <code style="color: #58a6ff;">[ Solar Integration • Power ]</code>
+      </td>
+    </tr>
+
+  </table>
+</div>
 
 ---
 
 
 <div align="center">
+  <h3>Prototype Mobility & UI Navigation Tests</h3>
 
-  <h3> Prototype Mobility & UI Navigation Tests</h3>
-
-  <table style="border-spacing: 20px; border-collapse: separate;">
-    <tr>
-      <td align="center" style="padding: 15px; vertical-align: top;">
-        <img src="assets/images/prototype_mobility_test.gif" width="300" alt="Hardware Actuation" style="border-radius: 15px; border: 1px solid #30363d;">
-        <br><br>
-        <div style="line-height: 1.6;">
-          <b style="font-size: 1.1em;">Hardware Actuation & Movement</b><br>
-          <i style="color: #8b949e;">Demonstrating physical response and mobility.</i><br>
-          <sub style="color: #58a6ff; font-weight: bold;">[ ESP32 • C++ • PWM Control ]</sub>
-        </div>
+  <table width="100%" style="border-collapse: collapse; table-layout: fixed;">
+    
+  <tr>
+      <td width="50%" align="center" style="padding: 10px;">
+        <img src="assets/images/prototype_mobility_test.gif" width="300" style="border-radius: 12px; border: 1px solid #30363d;">
       </td>
-      <td align="center" style="padding: 15px; vertical-align: top;">
-        <img src="assets/images/ui_navigation_test.gif" width="300" alt="Dashboard Interface" style="border-radius: 15px; border: 1px solid #30363d;">
-        <br><br>
-        <div style="line-height: 1.6;">
-          <b style="font-size: 1.1em;">Dashboard Interface Responsiveness</b><br>
-          <i style="color: #8b949e;">Real-time telemetry and UI navigation.</i><br>
-          <sub style="color: #58a6ff; font-weight: bold;">[ HTML/JS • MQTT • Web-Socket ]</sub>
-        </div>
+      <td width="50%" align="center" style="padding: 10px;">
+        <img src="assets/images/ui_navigation_test.gif" width="300" style="border-radius: 12px; border: 1px solid #30363d;">
       </td>
     </tr>
+
+  <tr>
+      <td align="center" style="padding: 5px;">
+        <b style="font-size: 1.1em;">Hardware Actuation & Movement</b>
+      </td>
+      <td align="center" style="padding: 5px;">
+        <b style="font-size: 1.1em;">Dashboard Interface Responsiveness</b>
+      </td>
+    </tr>
+
+  <tr>
+      <td align="center" style="padding: 5px; vertical-align: top;">
+        <i style="color: #8b949e;">Demonstrating physical response and mobility.</i>
+      </td>
+      <td align="center" style="padding: 5px; vertical-align: top;">
+        <i style="color: #8b949e;">Real-time telemetry and UI navigation.</i>
+      </td>
+    </tr>
+
+   <tr>
+      <td align="center" style="padding: 15px;">
+        <code style="color: #58a6ff;">[ ESP32 • C++ • PWM Control ]</code>
+      </td>
+      <td align="center" style="padding: 15px;">
+        <code style="color: #58a6ff;">[ HTML/JS • MQTT • Web-Socket ]</code>
+      </td>
+    </tr>
+
   </table>
-
 </div>
-
 
 ---
 
@@ -162,7 +177,9 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
   <table style="width: 100%; max-width: 900px; border-collapse: collapse; border: none;">
     <tr>
       <td colspan="3" align="center" style="padding: 0px;">
-        <img src="assets/images/emergency-control-views.jpg" width="100%" alt="Smart Wheelchair System Interface" style="display: block; border-radius: 15px; border: 1px solid #30363d; box-shadow: 0 4px 15px rgba(0,0,0,0.5);"/>
+        <a href="assets/images/emergency-control-views.jpg">
+          <img src="assets/images/emergency-control-views.jpg" width="100%" alt="Smart Wheelchair System Interface" style="display: block; border-radius: 15px; border: 1px solid #30363d; box-shadow: 0 4px 15px rgba(0,0,0,0.5);"/>
+        </a>
       </td>
     </tr>
     <tr align="center" style="height: 60px;">
@@ -183,37 +200,30 @@ The wheelchair Prototype is built with a custom-engineered structure, integrated
 
 </div>
 
-
 ---
 
 
 <div align="center">
   <h3>🔊 Live SOS Alarm Demonstration</h3>
+</div>
+
+https://github.com/user-attachments/assets/666d7f2d-7b0d-473f-8da0-fd3de3a02369
+
+<div align="center">
+  <br>
+  <h4>Bridging Digital Monitoring with Physical Safety</h4>
+  <p style="color: #c9d1d9; font-style: italic; max-width: 700px; line-height: 1.6;">
+    This demonstration showcases the system's active emergency response. Upon triggering the SOS protocol via the dashboard, the ESP32 instantaneously activates a high-decibel onboard buzzer. This critical failsafe ensures immediate physical-world intervention by notifying bystanders during sudden medical crises.
+  </p>
+  <br>
   
-  <table width="800" style="border: none;">
-    <tr>
-      <td align="center" style="padding: 0px;">
-        <video src="https://github.com/user-attachments/assets/666d7f2d-7b0d-473f-8da0-fd3de3a02369" width="100%" controls style="border-radius: 15px;"></video>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" style="padding: 20px;">
-        <h3>Bridging Digital Monitoring with Physical Safety</h3>
-        <p style="color: #c9d1d9; line-height: 1.6; font-style: italic; max-width: 700px;">
-          This demonstration showcases the system's active emergency response. Upon triggering the SOS protocol via the dashboard, 
-          the ESP32 instantaneously activates a high-decibel onboard buzzer. This critical failsafe ensures immediate 
-          physical-world intervention by notifying bystanders during sudden medical crises.
-        </p>
-        <table align="center" style="margin-top: 15px; border-collapse: separate; border-spacing: 10px;">
-          <tr>
-            <td style="background: #238636; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em;">   < 1ms Response Time</td>
-            <td style="background: #da3633; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em;">    100dB Buzzer Alert</td>
-            <td style="background: #0969da; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em;">   Offline-First Architecture</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+  <img src="https://img.shields.io/badge/Response_Time-%3C_1ms-238636?style=for-the-badge" alt="Response Time" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/Alert-100dB_Buzzer-da3633?style=for-the-badge" alt="100dB Buzzer" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/Architecture-Offline_First-0969da?style=for-the-badge" alt="Offline First" />
+  
+  <br><br>
 </div>
 
 ---
@@ -228,6 +238,7 @@ The wheelchair employs a "Sense-Think-Act" cycle to ensure user safety:
 
 ---
 
+
 ## Engineering Challenges & Strategic Solutions
 
 Throughout the development phase, several technical hurdles were addressed to ensure system stability:
@@ -237,6 +248,7 @@ Throughout the development phase, several technical hurdles were addressed to en
 * **System Stability:** Implemented a **Hardware Watchdog Timer (WDT)** to ensure the ESP32 recovers automatically from any software anomalies.
 
 ---
+
 
 ## Getting Started
 
@@ -304,9 +316,9 @@ To transition this project from a prototype to an enterprise-grade IoT solution,
 For an in-depth analysis of the system architecture, hardware design, and implementation details, you can access the full technical report here:
 
 <div align="center">
-  <a href="docs/IoT_Enabled_Solar_Powered_Smart_Wheelchair.pdf">
-    <img src="https://img.shields.io/badge/Download-Technical_Report_PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Download Report">
-  </a>
+
+[![Download Report](https://img.shields.io/badge/Download-Technical_Report_PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](docs/IoT_Enabled_Solar_Powered_Smart_Wheelchair.pdf)
+
 </div>
 
 ---
@@ -332,31 +344,31 @@ Developed at **Qassim University** (Department of Information Technology) <br>
 
 ---
 
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
----
-
 ## 📫 Let's Connect
 
-Interested in collaborating, have questions about the hardware integration, or want to discuss IoT solutions? Feel free to open an Issue or reach out directly!
+Whether you're interested in collaborating, have questions about the hardware integration, or want to discuss innovative IoT solutions—feel free to open an Issue or reach out directly!
 
 <div align="center">
 
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mansour-alharbi@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Email-Contact_Me-0078D4?style=flat&logo=microsoft-outlook&logoColor=white" alt="Email"></a><a href="https://www.linkedin.com/in/mansour-alharbi-129407350" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:mansour-alharbi@outlook.com"><img src="https://img.shields.io/badge/Email-Contact_Me-0078D4?style=flat&logo=microsoft-outlook&logoColor=white" alt="Email"></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/mansour-alharbi-129407350" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 
-  <br>
+  <br><br>
   
-  <p style="color: #8b949e; font-size: 0.9em; margin-top: 10px;">
-     Or drop a message at: <b>mansour-alharbi@outlook.com</b>
+  <p style="color: #8b949e; font-size: 0.9em;">
+    Or drop a message at: <b>mansour-alharbi@outlook.com</b>
   </p>
 
 </div>
 
 ---
+
 <div align="center">
 <i>"Innovating for a sustainable and inclusive future, in alignment with Saudi Vision 2030."</i>
 </div>
