@@ -119,15 +119,19 @@ The wheelchair prototype is built with a custom-engineered structure, integrated
 
 
 <div align="center">
-  <h3>  Prototype Mobility & UI Navigation</h3>
+  <h3> Prototype Mobility & UI Navigation</h3>
   
   <table style="width: 100%; max-width: 850px; border-collapse: collapse; border: 1px solid #30363d; background-color: #010409;">
     <tr>
       <td width="50%" align="center" style="border: 1px solid #30363d; padding: 0;">
-        <img src="https://raw.githubusercontent.com/MansourMutlaq/IoT-Smart-Wheelchair/main/assets/images/prototype_mobility_test.gif" style="width: 100%; height: 500px; object-fit: cover; display: block;" alt="Mobility Test">
+        <a href="assets/images/prototype_mobility_test.gif">
+          <img src="assets/images/prototype_mobility_test.gif" style="width: 100%; height: 500px; object-fit: cover; display: block;" alt="Mobility Test">
+        </a>
       </td>
       <td width="50%" align="center" style="border: 1px solid #30363d; padding: 0;">
-        <img src="https://raw.githubusercontent.com/MansourMutlaq/IoT-Smart-Wheelchair/main/assets/images/ui_navigation_test.gif" style="width: 100%; height: 500px; object-fit: cover; display: block;" alt="UI Navigation">
+        <a href="assets/images/ui_navigation_test.gif">
+          <img src="assets/images/ui_navigation_test.gif" style="width: 100%; height: 500px; object-fit: cover; display: block;" alt="UI Navigation">
+        </a>
       </td>
     </tr>
 
@@ -168,7 +172,9 @@ The wheelchair prototype is built with a custom-engineered structure, integrated
   <table style="width: 100%; max-width: 900px; border-collapse: collapse; border: none;">
     <tr>
       <td colspan="3" align="center" style="padding: 0px;">
-        <img src="https://raw.githubusercontent.com/MansourMutlaq/IoT-Smart-Wheelchair/main/assets/images/emergency-control-views.jpg" width="100%" alt="Smart Wheelchair System Interface" style="display: block; border-radius: 15px; border: 1px solid #30363d; box-shadow: 0 4px 15px rgba(0,0,0,0.5);"/>
+        <a href="assets/images/emergency-control-views.jpg">
+          <img src="assets/images/emergency-control-views.jpg" width="100%" alt="Smart Wheelchair System Interface" style="display: block; border-radius: 15px; border: 1px solid #30363d; box-shadow: 0 4px 15px rgba(0,0,0,0.5);"/>
+        </a>
       </td>
     </tr>
     <tr align="center" style="height: 60px;">
@@ -189,34 +195,28 @@ The wheelchair prototype is built with a custom-engineered structure, integrated
 
 </div>
 
+
 ---
 
 
 <div align="center">
   <h3>🔊 Live SOS Alarm Demonstration</h3>
-</div>
+  
+  <br>
 
-<br>
+  <video src="https://github.com/user-attachments/assets/666d7f2d-7b0d-473f-8da0-fd3de3a02369" width="380" controls></video>
 
-https://github.com/user-attachments/assets/666d7f2d-7b0d-473f-8da0-fd3de3a02369
+  <br><br>
 
-<br>
-
-<div align="center">
   <h4>Bridging Digital Monitoring with Physical Safety</h4>
   <p style="color: #c9d1d9; font-style: italic; max-width: 700px; line-height: 1.6;">
     This demonstration showcases the system's active emergency response. Upon triggering the SOS protocol via the dashboard, the ESP32 instantaneously activates a high-decibel onboard buzzer. This critical failsafe ensures immediate physical-world intervention by notifying bystanders during sudden medical crises.
   </p>
+  
   <br>
   
-  <img src="https://img.shields.io/badge/Response_Time-%3C_1ms-238636?style=for-the-badge" alt="Response Time" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Alert-100dB_Buzzer-da3633?style=for-the-badge" alt="100dB Buzzer" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Architecture-Offline_First-0969da?style=for-the-badge" alt="Offline First" />
-  
-  <br><br>
-</div>
+  <img src="https://img.shields.io/badge/Response_Time-%3C_1ms-238636?style=for-the-badge" alt="Response Time">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Alert-100dB_Buzzer-da3633?style=for-the-badge" alt="100dB Buzzer">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-Offline_First-0969da?style=for-the-badge" alt="Offline First">
+  </div>
 
 ---
 
@@ -304,12 +304,11 @@ To transition this project from a prototype to an enterprise-grade IoT solution,
 ---
 
 ###  Project Documentation
+
 For an in-depth analysis of the system architecture, hardware design, and implementation details, you can access the full technical report here:
 
 <div align="center">
-
-[![Download Report](https://img.shields.io/badge/Download-Technical_Report_PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](https://raw.githubusercontent.com/MansourMutlaq/IoT-Smart-Wheelchair/main/docs/IoT_Enabled_Solar_Powered_Smart_Wheelchair.pdf)
-
+  <a href="docs/IoT_Enabled_Solar_Powered_Smart_Wheelchair.pdf"><img src="https://img.shields.io/badge/View-Technical_Report-30363d?style=for-the-badge&logo=github&logoColor=white" alt="View Report"></a> <a href="https://raw.githubusercontent.com/MansourMutlaq/IoT-Smart-Wheelchair/main/docs/IoT_Enabled_Solar_Powered_Smart_Wheelchair.pdf"><img src="https://img.shields.io/badge/Download-PDF_(13.6_MB)-0078D4?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Download Report"></a>
 </div>
 
 ---
@@ -349,9 +348,9 @@ Whether you're interested in collaborating, have questions about the hardware in
 
 <div align="center">
 
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mansour-alharbi@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-Contact_Me-EA4335?style=flat&logo=gmail&logoColor=white" alt="Gmail"></a>
-  <a href="https://outlook.live.com/mail/0/deeplink/compose?to=mansour-alharbi@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Outlook-Contact_Me-0078D4?style=flat&logo=microsoft-outlook&logoColor=white" alt="Outlook"></a>
-  <a href="mailto:mansour-alharbi@outlook.com"><img src="https://img.shields.io/badge/Apple_Mail-Contact_Me-000000?style=flat&logo=apple&logoColor=white" alt="Apple Mail"></a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mansour-alharbi@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-Contact_Me-EA4335?style=flat&logo=gmail&logoColor=white" alt="Gmail"></a>&nbsp;&nbsp;
+  <a href="https://outlook.live.com/mail/0/deeplink/compose?to=mansour-alharbi@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Outlook-Contact_Me-0078D4?style=flat&logo=microsoft-outlook&logoColor=white" alt="Outlook"></a>&nbsp;&nbsp;
+  <a href="mailto:mansour-alharbi@outlook.com"><img src="https://img.shields.io/badge/Apple_Mail-Contact_Me-000000?style=flat&logo=apple&logoColor=white" alt="Apple Mail"></a>&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/mansour-alharbi-129407350" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 
   <br><br>
