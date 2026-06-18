@@ -119,46 +119,37 @@ The wheelchair prototype is built with a custom-engineered structure, integrated
 
 
 <div align="center">
-  <h3>Prototype Mobility & UI Navigation Tests</h3>
-
-  <table width="100%" style="border-collapse: collapse; table-layout: fixed;">
-    
-  <tr>
-      <td width="50%" align="center" style="padding: 10px;">
-        <img src="assets/images/prototype_mobility_test.gif" width="300" style="border-radius: 12px; border: 1px solid #30363d;">
+  <h3>  Prototype Mobility & UI Navigation</h3>
+  
+  <table style="width: 100%; max-width: 850px; border-collapse: collapse; border: 1px solid #30363d; background-color: #010409;">
+    <tr>
+      <td width="50%" align="center" style="border: 1px solid #30363d; padding: 0;">
+        <img src="https://raw.githubusercontent.com/MansourMutlaq/IoT-Smart-Wheelchair/main/assets/images/prototype_mobility_test.gif" style="width: 100%; height: 500px; object-fit: cover; display: block;" alt="Mobility Test">
       </td>
-      <td width="50%" align="center" style="padding: 10px;">
-        <img src="assets/images/ui_navigation_test.gif" width="300" style="border-radius: 12px; border: 1px solid #30363d;">
-      </td>
-    </tr>
-
-  <tr>
-      <td align="center" style="padding: 5px;">
-        <b style="font-size: 1.1em;">Hardware Actuation & Movement</b>
-      </td>
-      <td align="center" style="padding: 5px;">
-        <b style="font-size: 1.1em;">Dashboard Interface Responsiveness</b>
+      <td width="50%" align="center" style="border: 1px solid #30363d; padding: 0;">
+        <img src="https://raw.githubusercontent.com/MansourMutlaq/IoT-Smart-Wheelchair/main/assets/images/ui_navigation_test.gif" style="width: 100%; height: 500px; object-fit: cover; display: block;" alt="UI Navigation">
       </td>
     </tr>
 
   <tr>
-      <td align="center" style="padding: 5px; vertical-align: top;">
-        <i style="color: #8b949e;">Demonstrating physical response and mobility.</i>
+      <td align="center" style="border: 1px solid #30363d; padding: 15px; background-color: #0d1117;">
+        <b style="color: #c9d1d9; font-size: 16px;">Hardware Actuation & Movement</b>
       </td>
-      <td align="center" style="padding: 5px; vertical-align: top;">
-        <i style="color: #8b949e;">Real-time telemetry and UI navigation.</i>
-      </td>
-    </tr>
-
-   <tr>
-      <td align="center" style="padding: 15px;">
-        <code style="color: #58a6ff;">[ ESP32 • C++ • PWM Control ]</code>
-      </td>
-      <td align="center" style="padding: 15px;">
-        <code style="color: #58a6ff;">[ HTML/JS • MQTT • Web-Socket ]</code>
+      <td align="center" style="border: 1px solid #30363d; padding: 15px; background-color: #0d1117;">
+        <b style="color: #c9d1d9; font-size: 16px;">Dashboard Interface Responsiveness</b>
       </td>
     </tr>
 
+  <tr>
+      <td align="center" style="border: 1px solid #30363d; padding: 15px; background-color: #0d1117;">
+        <span style="color: #8b949e; font-size: 14px;"><i>Demonstrating physical response<br>and mobility</i></span><br><br>
+        <code style="color: #58a6ff; font-size: 13px;">[ ESP32 • PWM Control ]</code>
+      </td>
+      <td align="center" style="border: 1px solid #30363d; padding: 15px; background-color: #0d1117;">
+        <span style="color: #8b949e; font-size: 14px;"><i>Real-time telemetry<br>and UI navigation</i></span><br><br>
+        <code style="color: #58a6ff; font-size: 13px;">[ HTML/JS • MQTT ]</code>
+      </td>
+    </tr>
   </table>
 </div>
 
@@ -177,9 +168,7 @@ The wheelchair prototype is built with a custom-engineered structure, integrated
   <table style="width: 100%; max-width: 900px; border-collapse: collapse; border: none;">
     <tr>
       <td colspan="3" align="center" style="padding: 0px;">
-        <a href="assets/images/emergency-control-views.jpg">
-          <img src="assets/images/emergency-control-views.jpg" width="100%" alt="Smart Wheelchair System Interface" style="display: block; border-radius: 15px; border: 1px solid #30363d; box-shadow: 0 4px 15px rgba(0,0,0,0.5);"/>
-        </a>
+        <img src="https://raw.githubusercontent.com/MansourMutlaq/IoT-Smart-Wheelchair/main/assets/images/emergency-control-views.jpg" width="100%" alt="Smart Wheelchair System Interface" style="display: block; border-radius: 15px; border: 1px solid #30363d; box-shadow: 0 4px 15px rgba(0,0,0,0.5);"/>
       </td>
     </tr>
     <tr align="center" style="height: 60px;">
@@ -207,10 +196,13 @@ The wheelchair prototype is built with a custom-engineered structure, integrated
   <h3>🔊 Live SOS Alarm Demonstration</h3>
 </div>
 
+<br>
+
 https://github.com/user-attachments/assets/666d7f2d-7b0d-473f-8da0-fd3de3a02369
 
+<br>
+
 <div align="center">
-  <br>
   <h4>Bridging Digital Monitoring with Physical Safety</h4>
   <p style="color: #c9d1d9; font-style: italic; max-width: 700px; line-height: 1.6;">
     This demonstration showcases the system's active emergency response. Upon triggering the SOS protocol via the dashboard, the ESP32 instantaneously activates a high-decibel onboard buzzer. This critical failsafe ensures immediate physical-world intervention by notifying bystanders during sudden medical crises.
@@ -311,13 +303,12 @@ To transition this project from a prototype to an enterprise-grade IoT solution,
 
 ---
 
-
-### 📚 Project Documentation
+###  Project Documentation
 For an in-depth analysis of the system architecture, hardware design, and implementation details, you can access the full technical report here:
 
 <div align="center">
 
-[![Download Report](https://img.shields.io/badge/Download-Technical_Report_PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](docs/IoT_Enabled_Solar_Powered_Smart_Wheelchair.pdf)
+[![Download Report](https://img.shields.io/badge/Download-Technical_Report_PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](https://raw.githubusercontent.com/MansourMutlaq/IoT-Smart-Wheelchair/main/docs/IoT_Enabled_Solar_Powered_Smart_Wheelchair.pdf)
 
 </div>
 
@@ -330,16 +321,16 @@ Developed at **Qassim University** (Department of Information Technology) <br>
 
 **Final Grade:** A+ 
 
-### 💻 Lead Systems Engineer & Full-Stack Developer
+###  Lead Systems Engineer & Full-Stack Developer
 * **[Mansour Mutlaq Alharbi](https://www.linkedin.com/in/mansour-alharbi-129407350)**
   * **System Architecture:** Architected the end-to-end IoT system, bridging hardware sensors with a robust edge-computing firmware.
   * **Core Development:** Developed custom ESP32 firmware and autonomous navigation algorithms to ensure real-time obstacle avoidance.
   * **Full-Stack Deployment:** Deployed a responsive, real-time telemetry web dashboard to monitor system health and patient vitals.
-### 📑 Academic & Research Contributors
+###  Academic & Research Contributors
 * **Saud Faisal Alfadda:** Research & Technical Presentation.
 * **Meshari Abdullah Alsaegh:** Project Documentation & Academic Deliverables.
 
-### 🎓 Academic Supervision
+###  Academic Supervision
 * **Dr. Salim El-Khediri**
 
 ---
@@ -351,13 +342,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
+
 ## 📫 Let's Connect
 
 Whether you're interested in collaborating, have questions about the hardware integration, or want to discuss innovative IoT solutions—feel free to open an Issue or reach out directly!
 
 <div align="center">
 
-  <a href="mailto:mansour-alharbi@outlook.com"><img src="https://img.shields.io/badge/Email-Contact_Me-0078D4?style=flat&logo=microsoft-outlook&logoColor=white" alt="Email"></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/mansour-alharbi-129407350" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mansour-alharbi@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-Contact_Me-EA4335?style=flat&logo=gmail&logoColor=white" alt="Gmail"></a>
+  <a href="https://outlook.live.com/mail/0/deeplink/compose?to=mansour-alharbi@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Outlook-Contact_Me-0078D4?style=flat&logo=microsoft-outlook&logoColor=white" alt="Outlook"></a>
+  <a href="mailto:mansour-alharbi@outlook.com"><img src="https://img.shields.io/badge/Apple_Mail-Contact_Me-000000?style=flat&logo=apple&logoColor=white" alt="Apple Mail"></a>
+  <a href="https://www.linkedin.com/in/mansour-alharbi-129407350" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 
   <br><br>
   
